@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://tools/TexToTileMap.gd" type="Script" id=1]
+[ext_resource path="res://images/level_tile_map.png" type="Texture" id=2]
+
+[sub_resource type="SegmentShape2D" id=6]
+
+custom_solver_bias = 0.0
+a = Vector2( -16, -16 )
+b = Vector2( -16, 16 )
+
+[sub_resource type="SegmentShape2D" id=9]
+
+custom_solver_bias = 0.0
+a = Vector2( 16, -16 )
+b = Vector2( 16, 16 )
+
+[sub_resource type="SegmentShape2D" id=7]
+
+custom_solver_bias = 0.0
+a = Vector2( -16, -16 )
+b = Vector2( 16, -16 )
+
+[sub_resource type="SegmentShape2D" id=8]
+
+custom_solver_bias = 0.0
+a = Vector2( -16, 16 )
+b = Vector2( 16, 16 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16, 16 )
+
+[node name="TexToTileMap" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+texture = ExtResource( 2 )
+tileSize = 32
+generateTilemap = false
+lineShapeLeft = SubResource( 6 )
+lineShapeRight = SubResource( 9 )
+lineShapeTop = SubResource( 7 )
+lineShapeBottom = SubResource( 8 )
+rectangleShapeFull = SubResource( 5 )
+
+
