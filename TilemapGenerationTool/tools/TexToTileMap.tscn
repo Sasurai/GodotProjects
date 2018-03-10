@@ -1,47 +1,5206 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://tools/TexToTileMap.gd" type="Script" id=1]
 [ext_resource path="res://images/level_tile_map.png" type="Texture" id=2]
 
-[sub_resource type="SegmentShape2D" id=6]
-
-custom_solver_bias = 0.0
-a = Vector2( -16, -16 )
-b = Vector2( -16, 16 )
-
-[sub_resource type="SegmentShape2D" id=9]
-
-custom_solver_bias = 0.0
-a = Vector2( 16, -16 )
-b = Vector2( 16, 16 )
-
-[sub_resource type="SegmentShape2D" id=7]
-
-custom_solver_bias = 0.0
-a = Vector2( -16, -16 )
-b = Vector2( 16, -16 )
-
-[sub_resource type="SegmentShape2D" id=8]
+[sub_resource type="SegmentShape2D" id=1]
 
 custom_solver_bias = 0.0
 a = Vector2( -16, 16 )
 b = Vector2( 16, 16 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="SegmentShape2D" id=2]
 
 custom_solver_bias = 0.0
-extents = Vector2( 16, 16 )
+a = Vector2( -16, -16 )
+b = Vector2( -16, 16 )
 
 [node name="TexToTileMap" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 texture = ExtResource( 2 )
 tileSize = 32
-generateTilemap = false
-lineShapeLeft = SubResource( 6 )
-lineShapeRight = SubResource( 9 )
-lineShapeTop = SubResource( 7 )
-lineShapeBottom = SubResource( 8 )
-rectangleShapeFull = SubResource( 5 )
+generateTilemap = true
+lineColor = Color( 1, 0, 0, 1 )
+highlightColor = Color( 0, 1, 0, 0.3 )
+
+[node name="0000_0000" type="Sprite" parent="." index="0"]
+
+show_behind_parent = true
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="0000_0001" type="Sprite" parent="." index="1"]
+
+show_behind_parent = true
+position = Vector2( 0, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 32, 32, 32 )
+
+[node name="0000_0002" type="Sprite" parent="." index="2"]
+
+show_behind_parent = true
+position = Vector2( 0, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 64, 32, 32 )
+
+[node name="0000_0003" type="Sprite" parent="." index="3"]
+
+show_behind_parent = true
+position = Vector2( 0, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 96, 32, 32 )
+
+[node name="0000_0004" type="Sprite" parent="." index="4"]
+
+show_behind_parent = true
+position = Vector2( 0, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 128, 32, 32 )
+
+[node name="0000_0005" type="Sprite" parent="." index="5"]
+
+show_behind_parent = true
+position = Vector2( 0, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 160, 32, 32 )
+
+[node name="0000_0006" type="Sprite" parent="." index="6"]
+
+show_behind_parent = true
+position = Vector2( 0, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 192, 32, 32 )
+
+[node name="0000_0007" type="Sprite" parent="." index="7"]
+
+show_behind_parent = true
+position = Vector2( 0, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 224, 32, 32 )
+
+[node name="0000_0008" type="Sprite" parent="." index="8"]
+
+show_behind_parent = true
+position = Vector2( 0, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 256, 32, 32 )
+
+[node name="0000_0009" type="Sprite" parent="." index="9"]
+
+show_behind_parent = true
+position = Vector2( 0, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 288, 32, 32 )
+
+[node name="0000_0010" type="Sprite" parent="." index="10"]
+
+show_behind_parent = true
+position = Vector2( 0, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 320, 32, 32 )
+
+[node name="0000_0011" type="Sprite" parent="." index="11"]
+
+show_behind_parent = true
+position = Vector2( 0, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 352, 32, 32 )
+
+[node name="0000_0012" type="Sprite" parent="." index="12"]
+
+show_behind_parent = true
+position = Vector2( 0, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 384, 32, 32 )
+
+[node name="0000_0013" type="Sprite" parent="." index="13"]
+
+show_behind_parent = true
+position = Vector2( 0, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 416, 32, 32 )
+
+[node name="0000_0014" type="Sprite" parent="." index="14"]
+
+show_behind_parent = true
+position = Vector2( 0, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 448, 32, 32 )
+
+[node name="0000_0015" type="Sprite" parent="." index="15"]
+
+show_behind_parent = true
+position = Vector2( 0, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 480, 32, 32 )
+
+[node name="0000_0016" type="Sprite" parent="." index="16"]
+
+show_behind_parent = true
+position = Vector2( 0, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 512, 32, 32 )
+
+[node name="0000_0017" type="Sprite" parent="." index="17"]
+
+show_behind_parent = true
+position = Vector2( 0, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 544, 32, 32 )
+
+[node name="0000_0018" type="Sprite" parent="." index="18"]
+
+show_behind_parent = true
+position = Vector2( 0, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 576, 32, 32 )
+
+[node name="0000_0019" type="Sprite" parent="." index="19"]
+
+show_behind_parent = true
+position = Vector2( 0, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 608, 32, 32 )
+
+[node name="0000_0020" type="Sprite" parent="." index="20"]
+
+show_behind_parent = true
+position = Vector2( 0, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 640, 32, 32 )
+
+[node name="0000_0021" type="Sprite" parent="." index="21"]
+
+show_behind_parent = true
+position = Vector2( 0, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 672, 32, 32 )
+
+[node name="0000_0022" type="Sprite" parent="." index="22"]
+
+show_behind_parent = true
+position = Vector2( 0, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 704, 32, 32 )
+
+[node name="0000_0023" type="Sprite" parent="." index="23"]
+
+show_behind_parent = true
+position = Vector2( 0, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 736, 32, 32 )
+
+[node name="0000_0024" type="Sprite" parent="." index="24"]
+
+show_behind_parent = true
+position = Vector2( 0, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 768, 32, 32 )
+
+[node name="0000_0025" type="Sprite" parent="." index="25"]
+
+show_behind_parent = true
+position = Vector2( 0, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 800, 32, 32 )
+
+[node name="0000_0026" type="Sprite" parent="." index="26"]
+
+show_behind_parent = true
+position = Vector2( 0, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 832, 32, 32 )
+
+[node name="0000_0027" type="Sprite" parent="." index="27"]
+
+show_behind_parent = true
+position = Vector2( 0, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 864, 32, 32 )
+
+[node name="0001_0000" type="Sprite" parent="." index="28"]
+
+show_behind_parent = true
+position = Vector2( 32, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 0, 32, 32 )
+
+[node name="0001_0001" type="Sprite" parent="." index="29"]
+
+show_behind_parent = true
+position = Vector2( 32, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 32, 32, 32 )
+
+[node name="0001_0002" type="Sprite" parent="." index="30"]
+
+show_behind_parent = true
+position = Vector2( 32, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 64, 32, 32 )
+
+[node name="0001_0003" type="Sprite" parent="." index="31"]
+
+show_behind_parent = true
+position = Vector2( 32, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 96, 32, 32 )
+
+[node name="0001_0004" type="Sprite" parent="." index="32"]
+
+show_behind_parent = true
+position = Vector2( 32, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 128, 32, 32 )
+
+[node name="0001_0005" type="Sprite" parent="." index="33"]
+
+show_behind_parent = true
+position = Vector2( 32, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 160, 32, 32 )
+
+[node name="0001_0006" type="Sprite" parent="." index="34"]
+
+show_behind_parent = true
+position = Vector2( 32, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 192, 32, 32 )
+
+[node name="0001_0007" type="Sprite" parent="." index="35"]
+
+show_behind_parent = true
+position = Vector2( 32, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 224, 32, 32 )
+
+[node name="0001_0008" type="Sprite" parent="." index="36"]
+
+show_behind_parent = true
+position = Vector2( 32, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 256, 32, 32 )
+
+[node name="0001_0009" type="Sprite" parent="." index="37"]
+
+show_behind_parent = true
+position = Vector2( 32, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 288, 32, 32 )
+
+[node name="0001_0010" type="Sprite" parent="." index="38"]
+
+show_behind_parent = true
+position = Vector2( 32, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 320, 32, 32 )
+
+[node name="0001_0011" type="Sprite" parent="." index="39"]
+
+show_behind_parent = true
+position = Vector2( 32, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 352, 32, 32 )
+
+[node name="0001_0012" type="Sprite" parent="." index="40"]
+
+show_behind_parent = true
+position = Vector2( 32, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 384, 32, 32 )
+
+[node name="0001_0013" type="Sprite" parent="." index="41"]
+
+show_behind_parent = true
+position = Vector2( 32, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 416, 32, 32 )
+
+[node name="0001_0014" type="Sprite" parent="." index="42"]
+
+show_behind_parent = true
+position = Vector2( 32, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 448, 32, 32 )
+
+[node name="0001_0015" type="Sprite" parent="." index="43"]
+
+show_behind_parent = true
+position = Vector2( 32, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 480, 32, 32 )
+
+[node name="0001_0016" type="Sprite" parent="." index="44"]
+
+show_behind_parent = true
+position = Vector2( 32, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 512, 32, 32 )
+
+[node name="0001_0017" type="Sprite" parent="." index="45"]
+
+show_behind_parent = true
+position = Vector2( 32, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 544, 32, 32 )
+
+[node name="0001_0018" type="Sprite" parent="." index="46"]
+
+show_behind_parent = true
+position = Vector2( 32, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 576, 32, 32 )
+
+[node name="0001_0019" type="Sprite" parent="." index="47"]
+
+show_behind_parent = true
+position = Vector2( 32, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 608, 32, 32 )
+
+[node name="0001_0020" type="Sprite" parent="." index="48"]
+
+show_behind_parent = true
+position = Vector2( 32, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 640, 32, 32 )
+
+[node name="0001_0021" type="Sprite" parent="." index="49"]
+
+show_behind_parent = true
+position = Vector2( 32, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 672, 32, 32 )
+
+[node name="0001_0022" type="Sprite" parent="." index="50"]
+
+show_behind_parent = true
+position = Vector2( 32, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 704, 32, 32 )
+
+[node name="0001_0023" type="Sprite" parent="." index="51"]
+
+show_behind_parent = true
+position = Vector2( 32, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 736, 32, 32 )
+
+[node name="0001_0024" type="Sprite" parent="." index="52"]
+
+show_behind_parent = true
+position = Vector2( 32, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 768, 32, 32 )
+
+[node name="0001_0025" type="Sprite" parent="." index="53"]
+
+show_behind_parent = true
+position = Vector2( 32, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 800, 32, 32 )
+
+[node name="0001_0026" type="Sprite" parent="." index="54"]
+
+show_behind_parent = true
+position = Vector2( 32, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 832, 32, 32 )
+
+[node name="0001_0027" type="Sprite" parent="." index="55"]
+
+show_behind_parent = true
+position = Vector2( 32, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 32, 864, 32, 32 )
+
+[node name="0002_0000" type="Sprite" parent="." index="56"]
+
+show_behind_parent = true
+position = Vector2( 64, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 0, 32, 32 )
+
+[node name="0002_0001" type="Sprite" parent="." index="57"]
+
+show_behind_parent = true
+position = Vector2( 64, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 32, 32, 32 )
+
+[node name="0002_0002" type="Sprite" parent="." index="58"]
+
+show_behind_parent = true
+position = Vector2( 64, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 64, 32, 32 )
+
+[node name="0002_0003" type="Sprite" parent="." index="59"]
+
+show_behind_parent = true
+position = Vector2( 64, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 96, 32, 32 )
+
+[node name="0002_0004" type="Sprite" parent="." index="60"]
+
+show_behind_parent = true
+position = Vector2( 64, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 128, 32, 32 )
+
+[node name="0002_0005" type="Sprite" parent="." index="61"]
+
+show_behind_parent = true
+position = Vector2( 64, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 160, 32, 32 )
+
+[node name="0002_0006" type="Sprite" parent="." index="62"]
+
+show_behind_parent = true
+position = Vector2( 64, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 192, 32, 32 )
+
+[node name="0002_0007" type="Sprite" parent="." index="63"]
+
+show_behind_parent = true
+position = Vector2( 64, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 224, 32, 32 )
+
+[node name="0002_0008" type="Sprite" parent="." index="64"]
+
+show_behind_parent = true
+position = Vector2( 64, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 256, 32, 32 )
+
+[node name="0002_0009" type="Sprite" parent="." index="65"]
+
+show_behind_parent = true
+position = Vector2( 64, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 288, 32, 32 )
+
+[node name="0002_0010" type="Sprite" parent="." index="66"]
+
+show_behind_parent = true
+position = Vector2( 64, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 320, 32, 32 )
+
+[node name="0002_0011" type="Sprite" parent="." index="67"]
+
+show_behind_parent = true
+position = Vector2( 64, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 352, 32, 32 )
+
+[node name="0002_0012" type="Sprite" parent="." index="68"]
+
+show_behind_parent = true
+position = Vector2( 64, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 384, 32, 32 )
+
+[node name="0002_0013" type="Sprite" parent="." index="69"]
+
+show_behind_parent = true
+position = Vector2( 64, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 416, 32, 32 )
+
+[node name="0002_0014" type="Sprite" parent="." index="70"]
+
+show_behind_parent = true
+position = Vector2( 64, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 448, 32, 32 )
+
+[node name="0002_0015" type="Sprite" parent="." index="71"]
+
+show_behind_parent = true
+position = Vector2( 64, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 480, 32, 32 )
+
+[node name="0002_0016" type="Sprite" parent="." index="72"]
+
+show_behind_parent = true
+position = Vector2( 64, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 512, 32, 32 )
+
+[node name="0002_0017" type="Sprite" parent="." index="73"]
+
+show_behind_parent = true
+position = Vector2( 64, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 544, 32, 32 )
+
+[node name="0002_0018" type="Sprite" parent="." index="74"]
+
+show_behind_parent = true
+position = Vector2( 64, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 576, 32, 32 )
+
+[node name="0002_0019" type="Sprite" parent="." index="75"]
+
+show_behind_parent = true
+position = Vector2( 64, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 608, 32, 32 )
+
+[node name="0002_0020" type="Sprite" parent="." index="76"]
+
+show_behind_parent = true
+position = Vector2( 64, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 640, 32, 32 )
+
+[node name="0002_0021" type="Sprite" parent="." index="77"]
+
+show_behind_parent = true
+position = Vector2( 64, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 672, 32, 32 )
+
+[node name="0002_0022" type="Sprite" parent="." index="78"]
+
+show_behind_parent = true
+position = Vector2( 64, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 704, 32, 32 )
+
+[node name="0002_0023" type="Sprite" parent="." index="79"]
+
+show_behind_parent = true
+position = Vector2( 64, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 736, 32, 32 )
+
+[node name="0002_0024" type="Sprite" parent="." index="80"]
+
+show_behind_parent = true
+position = Vector2( 64, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 768, 32, 32 )
+
+[node name="0002_0025" type="Sprite" parent="." index="81"]
+
+show_behind_parent = true
+position = Vector2( 64, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 800, 32, 32 )
+
+[node name="0002_0026" type="Sprite" parent="." index="82"]
+
+show_behind_parent = true
+position = Vector2( 64, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 832, 32, 32 )
+
+[node name="0002_0027" type="Sprite" parent="." index="83"]
+
+show_behind_parent = true
+position = Vector2( 64, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 64, 864, 32, 32 )
+
+[node name="0003_0000" type="Sprite" parent="." index="84"]
+
+show_behind_parent = true
+position = Vector2( 96, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 0, 32, 32 )
+
+[node name="0003_0001" type="Sprite" parent="." index="85"]
+
+show_behind_parent = true
+position = Vector2( 96, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 32, 32, 32 )
+
+[node name="0003_0002" type="Sprite" parent="." index="86"]
+
+show_behind_parent = true
+position = Vector2( 96, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 64, 32, 32 )
+
+[node name="0003_0003" type="Sprite" parent="." index="87"]
+
+show_behind_parent = true
+position = Vector2( 96, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 96, 32, 32 )
+
+[node name="0003_0004" type="Sprite" parent="." index="88"]
+
+show_behind_parent = true
+position = Vector2( 96, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 128, 32, 32 )
+
+[node name="0003_0005" type="Sprite" parent="." index="89"]
+
+show_behind_parent = true
+position = Vector2( 96, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 160, 32, 32 )
+
+[node name="0003_0006" type="Sprite" parent="." index="90"]
+
+show_behind_parent = true
+position = Vector2( 96, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 192, 32, 32 )
+
+[node name="0003_0007" type="Sprite" parent="." index="91"]
+
+show_behind_parent = true
+position = Vector2( 96, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 224, 32, 32 )
+
+[node name="0003_0008" type="Sprite" parent="." index="92"]
+
+show_behind_parent = true
+position = Vector2( 96, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 256, 32, 32 )
+
+[node name="0003_0009" type="Sprite" parent="." index="93"]
+
+show_behind_parent = true
+position = Vector2( 96, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 288, 32, 32 )
+
+[node name="0003_0010" type="Sprite" parent="." index="94"]
+
+show_behind_parent = true
+position = Vector2( 96, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 320, 32, 32 )
+
+[node name="0003_0011" type="Sprite" parent="." index="95"]
+
+show_behind_parent = true
+position = Vector2( 96, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 352, 32, 32 )
+
+[node name="0003_0012" type="Sprite" parent="." index="96"]
+
+show_behind_parent = true
+position = Vector2( 96, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 384, 32, 32 )
+
+[node name="0003_0013" type="Sprite" parent="." index="97"]
+
+show_behind_parent = true
+position = Vector2( 96, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 416, 32, 32 )
+
+[node name="0003_0014" type="Sprite" parent="." index="98"]
+
+show_behind_parent = true
+position = Vector2( 96, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 448, 32, 32 )
+
+[node name="0003_0015" type="Sprite" parent="." index="99"]
+
+show_behind_parent = true
+position = Vector2( 96, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 480, 32, 32 )
+
+[node name="0003_0016" type="Sprite" parent="." index="100"]
+
+show_behind_parent = true
+position = Vector2( 96, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 512, 32, 32 )
+
+[node name="0003_0017" type="Sprite" parent="." index="101"]
+
+show_behind_parent = true
+position = Vector2( 96, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 544, 32, 32 )
+
+[node name="0003_0018" type="Sprite" parent="." index="102"]
+
+show_behind_parent = true
+position = Vector2( 96, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 576, 32, 32 )
+
+[node name="0003_0019" type="Sprite" parent="." index="103"]
+
+show_behind_parent = true
+position = Vector2( 96, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 608, 32, 32 )
+
+[node name="0003_0020" type="Sprite" parent="." index="104"]
+
+show_behind_parent = true
+position = Vector2( 96, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 640, 32, 32 )
+
+[node name="0003_0021" type="Sprite" parent="." index="105"]
+
+show_behind_parent = true
+position = Vector2( 96, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 672, 32, 32 )
+
+[node name="0003_0022" type="Sprite" parent="." index="106"]
+
+show_behind_parent = true
+position = Vector2( 96, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 704, 32, 32 )
+
+[node name="0003_0023" type="Sprite" parent="." index="107"]
+
+show_behind_parent = true
+position = Vector2( 96, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 736, 32, 32 )
+
+[node name="0003_0024" type="Sprite" parent="." index="108"]
+
+show_behind_parent = true
+position = Vector2( 96, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 768, 32, 32 )
+
+[node name="0003_0025" type="Sprite" parent="." index="109"]
+
+show_behind_parent = true
+position = Vector2( 96, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 800, 32, 32 )
+
+[node name="0003_0026" type="Sprite" parent="." index="110"]
+
+show_behind_parent = true
+position = Vector2( 96, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 832, 32, 32 )
+
+[node name="0003_0027" type="Sprite" parent="." index="111"]
+
+show_behind_parent = true
+position = Vector2( 96, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 96, 864, 32, 32 )
+
+[node name="0004_0000" type="Sprite" parent="." index="112"]
+
+show_behind_parent = true
+position = Vector2( 128, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 0, 32, 32 )
+
+[node name="0004_0001" type="Sprite" parent="." index="113"]
+
+show_behind_parent = true
+position = Vector2( 128, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 32, 32, 32 )
+
+[node name="0004_0002" type="Sprite" parent="." index="114"]
+
+show_behind_parent = true
+position = Vector2( 128, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 64, 32, 32 )
+
+[node name="0004_0003" type="Sprite" parent="." index="115"]
+
+show_behind_parent = true
+position = Vector2( 128, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 96, 32, 32 )
+
+[node name="0004_0004" type="Sprite" parent="." index="116"]
+
+show_behind_parent = true
+position = Vector2( 128, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 128, 32, 32 )
+
+[node name="0004_0005" type="Sprite" parent="." index="117"]
+
+show_behind_parent = true
+position = Vector2( 128, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 160, 32, 32 )
+
+[node name="0004_0006" type="Sprite" parent="." index="118"]
+
+show_behind_parent = true
+position = Vector2( 128, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 192, 32, 32 )
+
+[node name="0004_0007" type="Sprite" parent="." index="119"]
+
+show_behind_parent = true
+position = Vector2( 128, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 224, 32, 32 )
+
+[node name="0004_0008" type="Sprite" parent="." index="120"]
+
+show_behind_parent = true
+position = Vector2( 128, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 256, 32, 32 )
+
+[node name="0004_0009" type="Sprite" parent="." index="121"]
+
+show_behind_parent = true
+position = Vector2( 128, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 288, 32, 32 )
+
+[node name="0004_0010" type="Sprite" parent="." index="122"]
+
+show_behind_parent = true
+position = Vector2( 128, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 320, 32, 32 )
+
+[node name="0004_0011" type="Sprite" parent="." index="123"]
+
+show_behind_parent = true
+position = Vector2( 128, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 352, 32, 32 )
+
+[node name="0004_0012" type="Sprite" parent="." index="124"]
+
+show_behind_parent = true
+position = Vector2( 128, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 384, 32, 32 )
+
+[node name="0004_0013" type="Sprite" parent="." index="125"]
+
+show_behind_parent = true
+position = Vector2( 128, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 416, 32, 32 )
+
+[node name="0004_0014" type="Sprite" parent="." index="126"]
+
+show_behind_parent = true
+position = Vector2( 128, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 448, 32, 32 )
+
+[node name="0004_0015" type="Sprite" parent="." index="127"]
+
+show_behind_parent = true
+position = Vector2( 128, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 480, 32, 32 )
+
+[node name="0004_0016" type="Sprite" parent="." index="128"]
+
+show_behind_parent = true
+position = Vector2( 128, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 512, 32, 32 )
+
+[node name="0004_0017" type="Sprite" parent="." index="129"]
+
+show_behind_parent = true
+position = Vector2( 128, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 544, 32, 32 )
+
+[node name="0004_0018" type="Sprite" parent="." index="130"]
+
+show_behind_parent = true
+position = Vector2( 128, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 576, 32, 32 )
+
+[node name="0004_0019" type="Sprite" parent="." index="131"]
+
+show_behind_parent = true
+position = Vector2( 128, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 608, 32, 32 )
+
+[node name="0004_0020" type="Sprite" parent="." index="132"]
+
+show_behind_parent = true
+position = Vector2( 128, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 640, 32, 32 )
+
+[node name="0004_0021" type="Sprite" parent="." index="133"]
+
+show_behind_parent = true
+position = Vector2( 128, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 672, 32, 32 )
+
+[node name="0004_0022" type="Sprite" parent="." index="134"]
+
+show_behind_parent = true
+position = Vector2( 128, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 704, 32, 32 )
+
+[node name="TileRigidBody2D" type="StaticBody2D" parent="0004_0022" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="BottomCollisionShape" type="CollisionShape2D" parent="0004_0022/TileRigidBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="0004_0023" type="Sprite" parent="." index="135"]
+
+show_behind_parent = true
+position = Vector2( 128, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 736, 32, 32 )
+
+[node name="0004_0024" type="Sprite" parent="." index="136"]
+
+show_behind_parent = true
+position = Vector2( 128, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 768, 32, 32 )
+
+[node name="0004_0025" type="Sprite" parent="." index="137"]
+
+show_behind_parent = true
+position = Vector2( 128, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 800, 32, 32 )
+
+[node name="0004_0026" type="Sprite" parent="." index="138"]
+
+show_behind_parent = true
+position = Vector2( 128, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 832, 32, 32 )
+
+[node name="0004_0027" type="Sprite" parent="." index="139"]
+
+show_behind_parent = true
+position = Vector2( 128, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 864, 32, 32 )
+
+[node name="0005_0000" type="Sprite" parent="." index="140"]
+
+show_behind_parent = true
+position = Vector2( 160, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 0, 32, 32 )
+
+[node name="0005_0001" type="Sprite" parent="." index="141"]
+
+show_behind_parent = true
+position = Vector2( 160, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 32, 32, 32 )
+
+[node name="0005_0002" type="Sprite" parent="." index="142"]
+
+show_behind_parent = true
+position = Vector2( 160, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 64, 32, 32 )
+
+[node name="0005_0003" type="Sprite" parent="." index="143"]
+
+show_behind_parent = true
+position = Vector2( 160, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 96, 32, 32 )
+
+[node name="0005_0004" type="Sprite" parent="." index="144"]
+
+show_behind_parent = true
+position = Vector2( 160, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 128, 32, 32 )
+
+[node name="0005_0005" type="Sprite" parent="." index="145"]
+
+show_behind_parent = true
+position = Vector2( 160, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 160, 32, 32 )
+
+[node name="0005_0006" type="Sprite" parent="." index="146"]
+
+show_behind_parent = true
+position = Vector2( 160, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 192, 32, 32 )
+
+[node name="0005_0007" type="Sprite" parent="." index="147"]
+
+show_behind_parent = true
+position = Vector2( 160, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 224, 32, 32 )
+
+[node name="0005_0008" type="Sprite" parent="." index="148"]
+
+show_behind_parent = true
+position = Vector2( 160, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 256, 32, 32 )
+
+[node name="0005_0009" type="Sprite" parent="." index="149"]
+
+show_behind_parent = true
+position = Vector2( 160, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 288, 32, 32 )
+
+[node name="0005_0010" type="Sprite" parent="." index="150"]
+
+show_behind_parent = true
+position = Vector2( 160, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 320, 32, 32 )
+
+[node name="0005_0011" type="Sprite" parent="." index="151"]
+
+show_behind_parent = true
+position = Vector2( 160, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 352, 32, 32 )
+
+[node name="0005_0012" type="Sprite" parent="." index="152"]
+
+show_behind_parent = true
+position = Vector2( 160, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 384, 32, 32 )
+
+[node name="0005_0013" type="Sprite" parent="." index="153"]
+
+show_behind_parent = true
+position = Vector2( 160, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 416, 32, 32 )
+
+[node name="0005_0014" type="Sprite" parent="." index="154"]
+
+show_behind_parent = true
+position = Vector2( 160, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 448, 32, 32 )
+
+[node name="0005_0015" type="Sprite" parent="." index="155"]
+
+show_behind_parent = true
+position = Vector2( 160, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 480, 32, 32 )
+
+[node name="0005_0016" type="Sprite" parent="." index="156"]
+
+show_behind_parent = true
+position = Vector2( 160, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 512, 32, 32 )
+
+[node name="0005_0017" type="Sprite" parent="." index="157"]
+
+show_behind_parent = true
+position = Vector2( 160, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 544, 32, 32 )
+
+[node name="0005_0018" type="Sprite" parent="." index="158"]
+
+show_behind_parent = true
+position = Vector2( 160, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 576, 32, 32 )
+
+[node name="0005_0019" type="Sprite" parent="." index="159"]
+
+show_behind_parent = true
+position = Vector2( 160, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 608, 32, 32 )
+
+[node name="0005_0020" type="Sprite" parent="." index="160"]
+
+show_behind_parent = true
+position = Vector2( 160, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 640, 32, 32 )
+
+[node name="0005_0021" type="Sprite" parent="." index="161"]
+
+show_behind_parent = true
+position = Vector2( 160, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 672, 32, 32 )
+
+[node name="0005_0022" type="Sprite" parent="." index="162"]
+
+show_behind_parent = true
+position = Vector2( 160, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 704, 32, 32 )
+
+[node name="0005_0023" type="Sprite" parent="." index="163"]
+
+show_behind_parent = true
+position = Vector2( 160, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 736, 32, 32 )
+
+[node name="0005_0024" type="Sprite" parent="." index="164"]
+
+show_behind_parent = true
+position = Vector2( 160, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 768, 32, 32 )
+
+[node name="0005_0025" type="Sprite" parent="." index="165"]
+
+show_behind_parent = true
+position = Vector2( 160, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 800, 32, 32 )
+
+[node name="0005_0026" type="Sprite" parent="." index="166"]
+
+show_behind_parent = true
+position = Vector2( 160, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 832, 32, 32 )
+
+[node name="0005_0027" type="Sprite" parent="." index="167"]
+
+show_behind_parent = true
+position = Vector2( 160, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 160, 864, 32, 32 )
+
+[node name="0006_0000" type="Sprite" parent="." index="168"]
+
+show_behind_parent = true
+position = Vector2( 192, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 0, 32, 32 )
+
+[node name="0006_0001" type="Sprite" parent="." index="169"]
+
+show_behind_parent = true
+position = Vector2( 192, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 32, 32, 32 )
+
+[node name="0006_0002" type="Sprite" parent="." index="170"]
+
+show_behind_parent = true
+position = Vector2( 192, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 64, 32, 32 )
+
+[node name="0006_0003" type="Sprite" parent="." index="171"]
+
+show_behind_parent = true
+position = Vector2( 192, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 96, 32, 32 )
+
+[node name="0006_0004" type="Sprite" parent="." index="172"]
+
+show_behind_parent = true
+position = Vector2( 192, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 128, 32, 32 )
+
+[node name="0006_0005" type="Sprite" parent="." index="173"]
+
+show_behind_parent = true
+position = Vector2( 192, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 160, 32, 32 )
+
+[node name="0006_0006" type="Sprite" parent="." index="174"]
+
+show_behind_parent = true
+position = Vector2( 192, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 192, 32, 32 )
+
+[node name="0006_0007" type="Sprite" parent="." index="175"]
+
+show_behind_parent = true
+position = Vector2( 192, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 224, 32, 32 )
+
+[node name="0006_0008" type="Sprite" parent="." index="176"]
+
+show_behind_parent = true
+position = Vector2( 192, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 256, 32, 32 )
+
+[node name="0006_0009" type="Sprite" parent="." index="177"]
+
+show_behind_parent = true
+position = Vector2( 192, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 288, 32, 32 )
+
+[node name="0006_0010" type="Sprite" parent="." index="178"]
+
+show_behind_parent = true
+position = Vector2( 192, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 320, 32, 32 )
+
+[node name="0006_0011" type="Sprite" parent="." index="179"]
+
+show_behind_parent = true
+position = Vector2( 192, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 352, 32, 32 )
+
+[node name="0006_0012" type="Sprite" parent="." index="180"]
+
+show_behind_parent = true
+position = Vector2( 192, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 384, 32, 32 )
+
+[node name="0006_0013" type="Sprite" parent="." index="181"]
+
+show_behind_parent = true
+position = Vector2( 192, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 416, 32, 32 )
+
+[node name="0006_0014" type="Sprite" parent="." index="182"]
+
+show_behind_parent = true
+position = Vector2( 192, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 448, 32, 32 )
+
+[node name="0006_0015" type="Sprite" parent="." index="183"]
+
+show_behind_parent = true
+position = Vector2( 192, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 480, 32, 32 )
+
+[node name="0006_0016" type="Sprite" parent="." index="184"]
+
+show_behind_parent = true
+position = Vector2( 192, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 512, 32, 32 )
+
+[node name="0006_0017" type="Sprite" parent="." index="185"]
+
+show_behind_parent = true
+position = Vector2( 192, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 544, 32, 32 )
+
+[node name="0006_0018" type="Sprite" parent="." index="186"]
+
+show_behind_parent = true
+position = Vector2( 192, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 576, 32, 32 )
+
+[node name="0006_0019" type="Sprite" parent="." index="187"]
+
+show_behind_parent = true
+position = Vector2( 192, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 608, 32, 32 )
+
+[node name="0006_0020" type="Sprite" parent="." index="188"]
+
+show_behind_parent = true
+position = Vector2( 192, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 640, 32, 32 )
+
+[node name="0006_0021" type="Sprite" parent="." index="189"]
+
+show_behind_parent = true
+position = Vector2( 192, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 672, 32, 32 )
+
+[node name="0006_0022" type="Sprite" parent="." index="190"]
+
+show_behind_parent = true
+position = Vector2( 192, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 704, 32, 32 )
+
+[node name="0006_0023" type="Sprite" parent="." index="191"]
+
+show_behind_parent = true
+position = Vector2( 192, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 736, 32, 32 )
+
+[node name="0006_0024" type="Sprite" parent="." index="192"]
+
+show_behind_parent = true
+position = Vector2( 192, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 768, 32, 32 )
+
+[node name="0006_0025" type="Sprite" parent="." index="193"]
+
+show_behind_parent = true
+position = Vector2( 192, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 800, 32, 32 )
+
+[node name="0006_0026" type="Sprite" parent="." index="194"]
+
+show_behind_parent = true
+position = Vector2( 192, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 832, 32, 32 )
+
+[node name="0006_0027" type="Sprite" parent="." index="195"]
+
+show_behind_parent = true
+position = Vector2( 192, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 192, 864, 32, 32 )
+
+[node name="0007_0000" type="Sprite" parent="." index="196"]
+
+show_behind_parent = true
+position = Vector2( 224, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 0, 32, 32 )
+
+[node name="0007_0001" type="Sprite" parent="." index="197"]
+
+show_behind_parent = true
+position = Vector2( 224, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 32, 32, 32 )
+
+[node name="0007_0002" type="Sprite" parent="." index="198"]
+
+show_behind_parent = true
+position = Vector2( 224, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 64, 32, 32 )
+
+[node name="0007_0003" type="Sprite" parent="." index="199"]
+
+show_behind_parent = true
+position = Vector2( 224, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 96, 32, 32 )
+
+[node name="0007_0004" type="Sprite" parent="." index="200"]
+
+show_behind_parent = true
+position = Vector2( 224, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 128, 32, 32 )
+
+[node name="0007_0005" type="Sprite" parent="." index="201"]
+
+show_behind_parent = true
+position = Vector2( 224, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 160, 32, 32 )
+
+[node name="0007_0006" type="Sprite" parent="." index="202"]
+
+show_behind_parent = true
+position = Vector2( 224, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 192, 32, 32 )
+
+[node name="0007_0007" type="Sprite" parent="." index="203"]
+
+show_behind_parent = true
+position = Vector2( 224, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 224, 32, 32 )
+
+[node name="0007_0008" type="Sprite" parent="." index="204"]
+
+show_behind_parent = true
+position = Vector2( 224, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 256, 32, 32 )
+
+[node name="0007_0009" type="Sprite" parent="." index="205"]
+
+show_behind_parent = true
+position = Vector2( 224, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 288, 32, 32 )
+
+[node name="0007_0010" type="Sprite" parent="." index="206"]
+
+show_behind_parent = true
+position = Vector2( 224, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 320, 32, 32 )
+
+[node name="0007_0011" type="Sprite" parent="." index="207"]
+
+show_behind_parent = true
+position = Vector2( 224, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 352, 32, 32 )
+
+[node name="0007_0012" type="Sprite" parent="." index="208"]
+
+show_behind_parent = true
+position = Vector2( 224, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 384, 32, 32 )
+
+[node name="0007_0013" type="Sprite" parent="." index="209"]
+
+show_behind_parent = true
+position = Vector2( 224, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 416, 32, 32 )
+
+[node name="0007_0014" type="Sprite" parent="." index="210"]
+
+show_behind_parent = true
+position = Vector2( 224, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 448, 32, 32 )
+
+[node name="0007_0015" type="Sprite" parent="." index="211"]
+
+show_behind_parent = true
+position = Vector2( 224, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 480, 32, 32 )
+
+[node name="0007_0016" type="Sprite" parent="." index="212"]
+
+show_behind_parent = true
+position = Vector2( 224, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 512, 32, 32 )
+
+[node name="0007_0017" type="Sprite" parent="." index="213"]
+
+show_behind_parent = true
+position = Vector2( 224, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 544, 32, 32 )
+
+[node name="0007_0018" type="Sprite" parent="." index="214"]
+
+show_behind_parent = true
+position = Vector2( 224, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 576, 32, 32 )
+
+[node name="0007_0019" type="Sprite" parent="." index="215"]
+
+show_behind_parent = true
+position = Vector2( 224, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 608, 32, 32 )
+
+[node name="0007_0020" type="Sprite" parent="." index="216"]
+
+show_behind_parent = true
+position = Vector2( 224, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 640, 32, 32 )
+
+[node name="0007_0021" type="Sprite" parent="." index="217"]
+
+show_behind_parent = true
+position = Vector2( 224, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 672, 32, 32 )
+
+[node name="0007_0022" type="Sprite" parent="." index="218"]
+
+show_behind_parent = true
+position = Vector2( 224, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 704, 32, 32 )
+
+[node name="0007_0023" type="Sprite" parent="." index="219"]
+
+show_behind_parent = true
+position = Vector2( 224, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 736, 32, 32 )
+
+[node name="0007_0024" type="Sprite" parent="." index="220"]
+
+show_behind_parent = true
+position = Vector2( 224, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 768, 32, 32 )
+
+[node name="0007_0025" type="Sprite" parent="." index="221"]
+
+show_behind_parent = true
+position = Vector2( 224, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 800, 32, 32 )
+
+[node name="0007_0026" type="Sprite" parent="." index="222"]
+
+show_behind_parent = true
+position = Vector2( 224, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 832, 32, 32 )
+
+[node name="0007_0027" type="Sprite" parent="." index="223"]
+
+show_behind_parent = true
+position = Vector2( 224, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 224, 864, 32, 32 )
+
+[node name="0008_0000" type="Sprite" parent="." index="224"]
+
+show_behind_parent = true
+position = Vector2( 256, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 0, 32, 32 )
+
+[node name="0008_0001" type="Sprite" parent="." index="225"]
+
+show_behind_parent = true
+position = Vector2( 256, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 32, 32, 32 )
+
+[node name="0008_0002" type="Sprite" parent="." index="226"]
+
+show_behind_parent = true
+position = Vector2( 256, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 64, 32, 32 )
+
+[node name="0008_0003" type="Sprite" parent="." index="227"]
+
+show_behind_parent = true
+position = Vector2( 256, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 96, 32, 32 )
+
+[node name="0008_0004" type="Sprite" parent="." index="228"]
+
+show_behind_parent = true
+position = Vector2( 256, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 128, 32, 32 )
+
+[node name="0008_0005" type="Sprite" parent="." index="229"]
+
+show_behind_parent = true
+position = Vector2( 256, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 160, 32, 32 )
+
+[node name="0008_0006" type="Sprite" parent="." index="230"]
+
+show_behind_parent = true
+position = Vector2( 256, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 192, 32, 32 )
+
+[node name="0008_0007" type="Sprite" parent="." index="231"]
+
+show_behind_parent = true
+position = Vector2( 256, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 224, 32, 32 )
+
+[node name="0008_0008" type="Sprite" parent="." index="232"]
+
+show_behind_parent = true
+position = Vector2( 256, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 256, 32, 32 )
+
+[node name="0008_0009" type="Sprite" parent="." index="233"]
+
+show_behind_parent = true
+position = Vector2( 256, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 288, 32, 32 )
+
+[node name="0008_0010" type="Sprite" parent="." index="234"]
+
+show_behind_parent = true
+position = Vector2( 256, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 320, 32, 32 )
+
+[node name="0008_0011" type="Sprite" parent="." index="235"]
+
+show_behind_parent = true
+position = Vector2( 256, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 352, 32, 32 )
+
+[node name="0008_0012" type="Sprite" parent="." index="236"]
+
+show_behind_parent = true
+position = Vector2( 256, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 384, 32, 32 )
+
+[node name="0008_0013" type="Sprite" parent="." index="237"]
+
+show_behind_parent = true
+position = Vector2( 256, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 416, 32, 32 )
+
+[node name="0008_0014" type="Sprite" parent="." index="238"]
+
+show_behind_parent = true
+position = Vector2( 256, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 448, 32, 32 )
+
+[node name="0008_0015" type="Sprite" parent="." index="239"]
+
+show_behind_parent = true
+position = Vector2( 256, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 480, 32, 32 )
+
+[node name="0008_0016" type="Sprite" parent="." index="240"]
+
+show_behind_parent = true
+position = Vector2( 256, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 512, 32, 32 )
+
+[node name="0008_0017" type="Sprite" parent="." index="241"]
+
+show_behind_parent = true
+position = Vector2( 256, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 544, 32, 32 )
+
+[node name="0008_0018" type="Sprite" parent="." index="242"]
+
+show_behind_parent = true
+position = Vector2( 256, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 576, 32, 32 )
+
+[node name="0008_0019" type="Sprite" parent="." index="243"]
+
+show_behind_parent = true
+position = Vector2( 256, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 608, 32, 32 )
+
+[node name="0008_0020" type="Sprite" parent="." index="244"]
+
+show_behind_parent = true
+position = Vector2( 256, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 640, 32, 32 )
+
+[node name="0008_0021" type="Sprite" parent="." index="245"]
+
+show_behind_parent = true
+position = Vector2( 256, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 672, 32, 32 )
+
+[node name="0008_0022" type="Sprite" parent="." index="246"]
+
+show_behind_parent = true
+position = Vector2( 256, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 704, 32, 32 )
+
+[node name="0008_0023" type="Sprite" parent="." index="247"]
+
+show_behind_parent = true
+position = Vector2( 256, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 736, 32, 32 )
+
+[node name="0008_0024" type="Sprite" parent="." index="248"]
+
+show_behind_parent = true
+position = Vector2( 256, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 768, 32, 32 )
+
+[node name="0008_0025" type="Sprite" parent="." index="249"]
+
+show_behind_parent = true
+position = Vector2( 256, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 800, 32, 32 )
+
+[node name="0008_0026" type="Sprite" parent="." index="250"]
+
+show_behind_parent = true
+position = Vector2( 256, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 832, 32, 32 )
+
+[node name="0008_0027" type="Sprite" parent="." index="251"]
+
+show_behind_parent = true
+position = Vector2( 256, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 864, 32, 32 )
+
+[node name="0009_0000" type="Sprite" parent="." index="252"]
+
+show_behind_parent = true
+position = Vector2( 288, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 0, 32, 32 )
+
+[node name="0009_0001" type="Sprite" parent="." index="253"]
+
+show_behind_parent = true
+position = Vector2( 288, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 32, 32, 32 )
+
+[node name="0009_0002" type="Sprite" parent="." index="254"]
+
+show_behind_parent = true
+position = Vector2( 288, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 64, 32, 32 )
+
+[node name="0009_0003" type="Sprite" parent="." index="255"]
+
+show_behind_parent = true
+position = Vector2( 288, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 96, 32, 32 )
+
+[node name="0009_0004" type="Sprite" parent="." index="256"]
+
+show_behind_parent = true
+position = Vector2( 288, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 128, 32, 32 )
+
+[node name="0009_0005" type="Sprite" parent="." index="257"]
+
+show_behind_parent = true
+position = Vector2( 288, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 160, 32, 32 )
+
+[node name="0009_0006" type="Sprite" parent="." index="258"]
+
+show_behind_parent = true
+position = Vector2( 288, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 192, 32, 32 )
+
+[node name="0009_0007" type="Sprite" parent="." index="259"]
+
+show_behind_parent = true
+position = Vector2( 288, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 224, 32, 32 )
+
+[node name="0009_0008" type="Sprite" parent="." index="260"]
+
+show_behind_parent = true
+position = Vector2( 288, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 256, 32, 32 )
+
+[node name="0009_0009" type="Sprite" parent="." index="261"]
+
+show_behind_parent = true
+position = Vector2( 288, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 288, 32, 32 )
+
+[node name="0009_0010" type="Sprite" parent="." index="262"]
+
+show_behind_parent = true
+position = Vector2( 288, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 320, 32, 32 )
+
+[node name="0009_0011" type="Sprite" parent="." index="263"]
+
+show_behind_parent = true
+position = Vector2( 288, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 352, 32, 32 )
+
+[node name="0009_0012" type="Sprite" parent="." index="264"]
+
+show_behind_parent = true
+position = Vector2( 288, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 384, 32, 32 )
+
+[node name="0009_0013" type="Sprite" parent="." index="265"]
+
+show_behind_parent = true
+position = Vector2( 288, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 416, 32, 32 )
+
+[node name="0009_0014" type="Sprite" parent="." index="266"]
+
+show_behind_parent = true
+position = Vector2( 288, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 448, 32, 32 )
+
+[node name="0009_0015" type="Sprite" parent="." index="267"]
+
+show_behind_parent = true
+position = Vector2( 288, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 480, 32, 32 )
+
+[node name="0009_0016" type="Sprite" parent="." index="268"]
+
+show_behind_parent = true
+position = Vector2( 288, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 512, 32, 32 )
+
+[node name="0009_0017" type="Sprite" parent="." index="269"]
+
+show_behind_parent = true
+position = Vector2( 288, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 544, 32, 32 )
+
+[node name="0009_0018" type="Sprite" parent="." index="270"]
+
+show_behind_parent = true
+position = Vector2( 288, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 576, 32, 32 )
+
+[node name="0009_0019" type="Sprite" parent="." index="271"]
+
+show_behind_parent = true
+position = Vector2( 288, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 608, 32, 32 )
+
+[node name="0009_0020" type="Sprite" parent="." index="272"]
+
+show_behind_parent = true
+position = Vector2( 288, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 640, 32, 32 )
+
+[node name="0009_0021" type="Sprite" parent="." index="273"]
+
+show_behind_parent = true
+position = Vector2( 288, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 672, 32, 32 )
+
+[node name="0009_0022" type="Sprite" parent="." index="274"]
+
+show_behind_parent = true
+position = Vector2( 288, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 704, 32, 32 )
+
+[node name="0009_0023" type="Sprite" parent="." index="275"]
+
+show_behind_parent = true
+position = Vector2( 288, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 736, 32, 32 )
+
+[node name="0009_0024" type="Sprite" parent="." index="276"]
+
+show_behind_parent = true
+position = Vector2( 288, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 768, 32, 32 )
+
+[node name="0009_0025" type="Sprite" parent="." index="277"]
+
+show_behind_parent = true
+position = Vector2( 288, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 800, 32, 32 )
+
+[node name="0009_0026" type="Sprite" parent="." index="278"]
+
+show_behind_parent = true
+position = Vector2( 288, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 832, 32, 32 )
+
+[node name="0009_0027" type="Sprite" parent="." index="279"]
+
+show_behind_parent = true
+position = Vector2( 288, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 288, 864, 32, 32 )
+
+[node name="0010_0000" type="Sprite" parent="." index="280"]
+
+show_behind_parent = true
+position = Vector2( 320, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 0, 32, 32 )
+
+[node name="0010_0001" type="Sprite" parent="." index="281"]
+
+show_behind_parent = true
+position = Vector2( 320, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 32, 32, 32 )
+
+[node name="0010_0002" type="Sprite" parent="." index="282"]
+
+show_behind_parent = true
+position = Vector2( 320, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 64, 32, 32 )
+
+[node name="0010_0003" type="Sprite" parent="." index="283"]
+
+show_behind_parent = true
+position = Vector2( 320, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 96, 32, 32 )
+
+[node name="0010_0004" type="Sprite" parent="." index="284"]
+
+show_behind_parent = true
+position = Vector2( 320, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 128, 32, 32 )
+
+[node name="0010_0005" type="Sprite" parent="." index="285"]
+
+show_behind_parent = true
+position = Vector2( 320, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 160, 32, 32 )
+
+[node name="0010_0006" type="Sprite" parent="." index="286"]
+
+show_behind_parent = true
+position = Vector2( 320, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 192, 32, 32 )
+
+[node name="0010_0007" type="Sprite" parent="." index="287"]
+
+show_behind_parent = true
+position = Vector2( 320, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 224, 32, 32 )
+
+[node name="0010_0008" type="Sprite" parent="." index="288"]
+
+show_behind_parent = true
+position = Vector2( 320, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 256, 32, 32 )
+
+[node name="0010_0009" type="Sprite" parent="." index="289"]
+
+show_behind_parent = true
+position = Vector2( 320, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 288, 32, 32 )
+
+[node name="0010_0010" type="Sprite" parent="." index="290"]
+
+show_behind_parent = true
+position = Vector2( 320, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 320, 32, 32 )
+
+[node name="0010_0011" type="Sprite" parent="." index="291"]
+
+show_behind_parent = true
+position = Vector2( 320, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 352, 32, 32 )
+
+[node name="0010_0012" type="Sprite" parent="." index="292"]
+
+show_behind_parent = true
+position = Vector2( 320, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 384, 32, 32 )
+
+[node name="0010_0013" type="Sprite" parent="." index="293"]
+
+show_behind_parent = true
+position = Vector2( 320, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 416, 32, 32 )
+
+[node name="0010_0014" type="Sprite" parent="." index="294"]
+
+show_behind_parent = true
+position = Vector2( 320, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 448, 32, 32 )
+
+[node name="0010_0015" type="Sprite" parent="." index="295"]
+
+show_behind_parent = true
+position = Vector2( 320, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 480, 32, 32 )
+
+[node name="0010_0016" type="Sprite" parent="." index="296"]
+
+show_behind_parent = true
+position = Vector2( 320, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 512, 32, 32 )
+
+[node name="0010_0017" type="Sprite" parent="." index="297"]
+
+show_behind_parent = true
+position = Vector2( 320, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 544, 32, 32 )
+
+[node name="0010_0018" type="Sprite" parent="." index="298"]
+
+show_behind_parent = true
+position = Vector2( 320, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 576, 32, 32 )
+
+[node name="0010_0019" type="Sprite" parent="." index="299"]
+
+show_behind_parent = true
+position = Vector2( 320, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 608, 32, 32 )
+
+[node name="0010_0020" type="Sprite" parent="." index="300"]
+
+show_behind_parent = true
+position = Vector2( 320, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 640, 32, 32 )
+
+[node name="0010_0021" type="Sprite" parent="." index="301"]
+
+show_behind_parent = true
+position = Vector2( 320, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 672, 32, 32 )
+
+[node name="0010_0022" type="Sprite" parent="." index="302"]
+
+show_behind_parent = true
+position = Vector2( 320, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 704, 32, 32 )
+
+[node name="0010_0023" type="Sprite" parent="." index="303"]
+
+show_behind_parent = true
+position = Vector2( 320, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 736, 32, 32 )
+
+[node name="0010_0024" type="Sprite" parent="." index="304"]
+
+show_behind_parent = true
+position = Vector2( 320, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 768, 32, 32 )
+
+[node name="0010_0025" type="Sprite" parent="." index="305"]
+
+show_behind_parent = true
+position = Vector2( 320, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 800, 32, 32 )
+
+[node name="0010_0026" type="Sprite" parent="." index="306"]
+
+show_behind_parent = true
+position = Vector2( 320, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 832, 32, 32 )
+
+[node name="0010_0027" type="Sprite" parent="." index="307"]
+
+show_behind_parent = true
+position = Vector2( 320, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 320, 864, 32, 32 )
+
+[node name="0011_0000" type="Sprite" parent="." index="308"]
+
+show_behind_parent = true
+position = Vector2( 352, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 0, 32, 32 )
+
+[node name="0011_0001" type="Sprite" parent="." index="309"]
+
+show_behind_parent = true
+position = Vector2( 352, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 32, 32, 32 )
+
+[node name="0011_0002" type="Sprite" parent="." index="310"]
+
+show_behind_parent = true
+position = Vector2( 352, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 64, 32, 32 )
+
+[node name="0011_0003" type="Sprite" parent="." index="311"]
+
+show_behind_parent = true
+position = Vector2( 352, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 96, 32, 32 )
+
+[node name="0011_0004" type="Sprite" parent="." index="312"]
+
+show_behind_parent = true
+position = Vector2( 352, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 128, 32, 32 )
+
+[node name="0011_0005" type="Sprite" parent="." index="313"]
+
+show_behind_parent = true
+position = Vector2( 352, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 160, 32, 32 )
+
+[node name="0011_0006" type="Sprite" parent="." index="314"]
+
+show_behind_parent = true
+position = Vector2( 352, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 192, 32, 32 )
+
+[node name="0011_0007" type="Sprite" parent="." index="315"]
+
+show_behind_parent = true
+position = Vector2( 352, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 224, 32, 32 )
+
+[node name="0011_0008" type="Sprite" parent="." index="316"]
+
+show_behind_parent = true
+position = Vector2( 352, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 256, 32, 32 )
+
+[node name="0011_0009" type="Sprite" parent="." index="317"]
+
+show_behind_parent = true
+position = Vector2( 352, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 288, 32, 32 )
+
+[node name="0011_0010" type="Sprite" parent="." index="318"]
+
+show_behind_parent = true
+position = Vector2( 352, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 320, 32, 32 )
+
+[node name="0011_0011" type="Sprite" parent="." index="319"]
+
+show_behind_parent = true
+position = Vector2( 352, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 352, 32, 32 )
+
+[node name="0011_0012" type="Sprite" parent="." index="320"]
+
+show_behind_parent = true
+position = Vector2( 352, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 384, 32, 32 )
+
+[node name="0011_0013" type="Sprite" parent="." index="321"]
+
+show_behind_parent = true
+position = Vector2( 352, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 416, 32, 32 )
+
+[node name="0011_0014" type="Sprite" parent="." index="322"]
+
+show_behind_parent = true
+position = Vector2( 352, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 448, 32, 32 )
+
+[node name="0011_0015" type="Sprite" parent="." index="323"]
+
+show_behind_parent = true
+position = Vector2( 352, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 480, 32, 32 )
+
+[node name="0011_0016" type="Sprite" parent="." index="324"]
+
+show_behind_parent = true
+position = Vector2( 352, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 512, 32, 32 )
+
+[node name="0011_0017" type="Sprite" parent="." index="325"]
+
+show_behind_parent = true
+position = Vector2( 352, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 544, 32, 32 )
+
+[node name="0011_0018" type="Sprite" parent="." index="326"]
+
+show_behind_parent = true
+position = Vector2( 352, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 576, 32, 32 )
+
+[node name="0011_0019" type="Sprite" parent="." index="327"]
+
+show_behind_parent = true
+position = Vector2( 352, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 608, 32, 32 )
+
+[node name="0011_0020" type="Sprite" parent="." index="328"]
+
+show_behind_parent = true
+position = Vector2( 352, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 640, 32, 32 )
+
+[node name="0011_0021" type="Sprite" parent="." index="329"]
+
+show_behind_parent = true
+position = Vector2( 352, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 672, 32, 32 )
+
+[node name="0011_0022" type="Sprite" parent="." index="330"]
+
+show_behind_parent = true
+position = Vector2( 352, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 704, 32, 32 )
+
+[node name="0011_0023" type="Sprite" parent="." index="331"]
+
+show_behind_parent = true
+position = Vector2( 352, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 736, 32, 32 )
+
+[node name="0011_0024" type="Sprite" parent="." index="332"]
+
+show_behind_parent = true
+position = Vector2( 352, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 768, 32, 32 )
+
+[node name="0011_0025" type="Sprite" parent="." index="333"]
+
+show_behind_parent = true
+position = Vector2( 352, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 800, 32, 32 )
+
+[node name="0011_0026" type="Sprite" parent="." index="334"]
+
+show_behind_parent = true
+position = Vector2( 352, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 832, 32, 32 )
+
+[node name="0011_0027" type="Sprite" parent="." index="335"]
+
+show_behind_parent = true
+position = Vector2( 352, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 352, 864, 32, 32 )
+
+[node name="0012_0000" type="Sprite" parent="." index="336"]
+
+show_behind_parent = true
+position = Vector2( 384, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 0, 32, 32 )
+
+[node name="0012_0001" type="Sprite" parent="." index="337"]
+
+show_behind_parent = true
+position = Vector2( 384, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 32, 32, 32 )
+
+[node name="0012_0002" type="Sprite" parent="." index="338"]
+
+show_behind_parent = true
+position = Vector2( 384, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 64, 32, 32 )
+
+[node name="0012_0003" type="Sprite" parent="." index="339"]
+
+show_behind_parent = true
+position = Vector2( 384, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 96, 32, 32 )
+
+[node name="0012_0004" type="Sprite" parent="." index="340"]
+
+show_behind_parent = true
+position = Vector2( 384, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 128, 32, 32 )
+
+[node name="0012_0005" type="Sprite" parent="." index="341"]
+
+show_behind_parent = true
+position = Vector2( 384, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 160, 32, 32 )
+
+[node name="0012_0006" type="Sprite" parent="." index="342"]
+
+show_behind_parent = true
+position = Vector2( 384, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 192, 32, 32 )
+
+[node name="0012_0007" type="Sprite" parent="." index="343"]
+
+show_behind_parent = true
+position = Vector2( 384, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 224, 32, 32 )
+
+[node name="0012_0008" type="Sprite" parent="." index="344"]
+
+show_behind_parent = true
+position = Vector2( 384, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 256, 32, 32 )
+
+[node name="0012_0009" type="Sprite" parent="." index="345"]
+
+show_behind_parent = true
+position = Vector2( 384, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 288, 32, 32 )
+
+[node name="0012_0010" type="Sprite" parent="." index="346"]
+
+show_behind_parent = true
+position = Vector2( 384, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 320, 32, 32 )
+
+[node name="0012_0011" type="Sprite" parent="." index="347"]
+
+show_behind_parent = true
+position = Vector2( 384, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 352, 32, 32 )
+
+[node name="0012_0012" type="Sprite" parent="." index="348"]
+
+show_behind_parent = true
+position = Vector2( 384, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 384, 32, 32 )
+
+[node name="0012_0013" type="Sprite" parent="." index="349"]
+
+show_behind_parent = true
+position = Vector2( 384, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 416, 32, 32 )
+
+[node name="0012_0014" type="Sprite" parent="." index="350"]
+
+show_behind_parent = true
+position = Vector2( 384, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 448, 32, 32 )
+
+[node name="0012_0015" type="Sprite" parent="." index="351"]
+
+show_behind_parent = true
+position = Vector2( 384, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 480, 32, 32 )
+
+[node name="0012_0016" type="Sprite" parent="." index="352"]
+
+show_behind_parent = true
+position = Vector2( 384, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 512, 32, 32 )
+
+[node name="0012_0017" type="Sprite" parent="." index="353"]
+
+show_behind_parent = true
+position = Vector2( 384, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 544, 32, 32 )
+
+[node name="0012_0018" type="Sprite" parent="." index="354"]
+
+show_behind_parent = true
+position = Vector2( 384, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 576, 32, 32 )
+
+[node name="0012_0019" type="Sprite" parent="." index="355"]
+
+show_behind_parent = true
+position = Vector2( 384, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 608, 32, 32 )
+
+[node name="0012_0020" type="Sprite" parent="." index="356"]
+
+show_behind_parent = true
+position = Vector2( 384, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 640, 32, 32 )
+
+[node name="0012_0021" type="Sprite" parent="." index="357"]
+
+show_behind_parent = true
+position = Vector2( 384, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 672, 32, 32 )
+
+[node name="0012_0022" type="Sprite" parent="." index="358"]
+
+show_behind_parent = true
+position = Vector2( 384, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 704, 32, 32 )
+
+[node name="0012_0023" type="Sprite" parent="." index="359"]
+
+show_behind_parent = true
+position = Vector2( 384, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 736, 32, 32 )
+
+[node name="0012_0024" type="Sprite" parent="." index="360"]
+
+show_behind_parent = true
+position = Vector2( 384, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 768, 32, 32 )
+
+[node name="0012_0025" type="Sprite" parent="." index="361"]
+
+show_behind_parent = true
+position = Vector2( 384, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 800, 32, 32 )
+
+[node name="0012_0026" type="Sprite" parent="." index="362"]
+
+show_behind_parent = true
+position = Vector2( 384, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 832, 32, 32 )
+
+[node name="0012_0027" type="Sprite" parent="." index="363"]
+
+show_behind_parent = true
+position = Vector2( 384, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 384, 864, 32, 32 )
+
+[node name="0013_0000" type="Sprite" parent="." index="364"]
+
+show_behind_parent = true
+position = Vector2( 416, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 0, 32, 32 )
+
+[node name="0013_0001" type="Sprite" parent="." index="365"]
+
+show_behind_parent = true
+position = Vector2( 416, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 32, 32, 32 )
+
+[node name="0013_0002" type="Sprite" parent="." index="366"]
+
+show_behind_parent = true
+position = Vector2( 416, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 64, 32, 32 )
+
+[node name="0013_0003" type="Sprite" parent="." index="367"]
+
+show_behind_parent = true
+position = Vector2( 416, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 96, 32, 32 )
+
+[node name="0013_0004" type="Sprite" parent="." index="368"]
+
+show_behind_parent = true
+position = Vector2( 416, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 128, 32, 32 )
+
+[node name="0013_0005" type="Sprite" parent="." index="369"]
+
+show_behind_parent = true
+position = Vector2( 416, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 160, 32, 32 )
+
+[node name="0013_0006" type="Sprite" parent="." index="370"]
+
+show_behind_parent = true
+position = Vector2( 416, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 192, 32, 32 )
+
+[node name="0013_0007" type="Sprite" parent="." index="371"]
+
+show_behind_parent = true
+position = Vector2( 416, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 224, 32, 32 )
+
+[node name="0013_0008" type="Sprite" parent="." index="372"]
+
+show_behind_parent = true
+position = Vector2( 416, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 256, 32, 32 )
+
+[node name="0013_0009" type="Sprite" parent="." index="373"]
+
+show_behind_parent = true
+position = Vector2( 416, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 288, 32, 32 )
+
+[node name="0013_0010" type="Sprite" parent="." index="374"]
+
+show_behind_parent = true
+position = Vector2( 416, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 320, 32, 32 )
+
+[node name="0013_0011" type="Sprite" parent="." index="375"]
+
+show_behind_parent = true
+position = Vector2( 416, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 352, 32, 32 )
+
+[node name="0013_0012" type="Sprite" parent="." index="376"]
+
+show_behind_parent = true
+position = Vector2( 416, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 384, 32, 32 )
+
+[node name="0013_0013" type="Sprite" parent="." index="377"]
+
+show_behind_parent = true
+position = Vector2( 416, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 416, 32, 32 )
+
+[node name="0013_0014" type="Sprite" parent="." index="378"]
+
+show_behind_parent = true
+position = Vector2( 416, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 448, 32, 32 )
+
+[node name="0013_0015" type="Sprite" parent="." index="379"]
+
+show_behind_parent = true
+position = Vector2( 416, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 480, 32, 32 )
+
+[node name="0013_0016" type="Sprite" parent="." index="380"]
+
+show_behind_parent = true
+position = Vector2( 416, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 512, 32, 32 )
+
+[node name="0013_0017" type="Sprite" parent="." index="381"]
+
+show_behind_parent = true
+position = Vector2( 416, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 544, 32, 32 )
+
+[node name="0013_0018" type="Sprite" parent="." index="382"]
+
+show_behind_parent = true
+position = Vector2( 416, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 576, 32, 32 )
+
+[node name="0013_0019" type="Sprite" parent="." index="383"]
+
+show_behind_parent = true
+position = Vector2( 416, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 608, 32, 32 )
+
+[node name="0013_0020" type="Sprite" parent="." index="384"]
+
+show_behind_parent = true
+position = Vector2( 416, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 640, 32, 32 )
+
+[node name="0013_0021" type="Sprite" parent="." index="385"]
+
+show_behind_parent = true
+position = Vector2( 416, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 672, 32, 32 )
+
+[node name="TileRigidBody2D" type="StaticBody2D" parent="0013_0021" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="LeftCollisionShape" type="CollisionShape2D" parent="0013_0021/TileRigidBody2D" index="0"]
+
+shape = SubResource( 2 )
+
+[node name="0013_0022" type="Sprite" parent="." index="386"]
+
+show_behind_parent = true
+position = Vector2( 416, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 704, 32, 32 )
+
+[node name="0013_0023" type="Sprite" parent="." index="387"]
+
+show_behind_parent = true
+position = Vector2( 416, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 736, 32, 32 )
+
+[node name="0013_0024" type="Sprite" parent="." index="388"]
+
+show_behind_parent = true
+position = Vector2( 416, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 768, 32, 32 )
+
+[node name="0013_0025" type="Sprite" parent="." index="389"]
+
+show_behind_parent = true
+position = Vector2( 416, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 800, 32, 32 )
+
+[node name="0013_0026" type="Sprite" parent="." index="390"]
+
+show_behind_parent = true
+position = Vector2( 416, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 832, 32, 32 )
+
+[node name="0013_0027" type="Sprite" parent="." index="391"]
+
+show_behind_parent = true
+position = Vector2( 416, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 416, 864, 32, 32 )
+
+[node name="0014_0000" type="Sprite" parent="." index="392"]
+
+show_behind_parent = true
+position = Vector2( 448, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 0, 32, 32 )
+
+[node name="0014_0001" type="Sprite" parent="." index="393"]
+
+show_behind_parent = true
+position = Vector2( 448, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 32, 32, 32 )
+
+[node name="0014_0002" type="Sprite" parent="." index="394"]
+
+show_behind_parent = true
+position = Vector2( 448, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 64, 32, 32 )
+
+[node name="0014_0003" type="Sprite" parent="." index="395"]
+
+show_behind_parent = true
+position = Vector2( 448, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 96, 32, 32 )
+
+[node name="0014_0004" type="Sprite" parent="." index="396"]
+
+show_behind_parent = true
+position = Vector2( 448, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 128, 32, 32 )
+
+[node name="0014_0005" type="Sprite" parent="." index="397"]
+
+show_behind_parent = true
+position = Vector2( 448, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 160, 32, 32 )
+
+[node name="0014_0006" type="Sprite" parent="." index="398"]
+
+show_behind_parent = true
+position = Vector2( 448, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 192, 32, 32 )
+
+[node name="0014_0007" type="Sprite" parent="." index="399"]
+
+show_behind_parent = true
+position = Vector2( 448, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 224, 32, 32 )
+
+[node name="0014_0008" type="Sprite" parent="." index="400"]
+
+show_behind_parent = true
+position = Vector2( 448, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 256, 32, 32 )
+
+[node name="0014_0009" type="Sprite" parent="." index="401"]
+
+show_behind_parent = true
+position = Vector2( 448, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 288, 32, 32 )
+
+[node name="0014_0010" type="Sprite" parent="." index="402"]
+
+show_behind_parent = true
+position = Vector2( 448, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 320, 32, 32 )
+
+[node name="0014_0011" type="Sprite" parent="." index="403"]
+
+show_behind_parent = true
+position = Vector2( 448, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 352, 32, 32 )
+
+[node name="0014_0012" type="Sprite" parent="." index="404"]
+
+show_behind_parent = true
+position = Vector2( 448, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 384, 32, 32 )
+
+[node name="0014_0013" type="Sprite" parent="." index="405"]
+
+show_behind_parent = true
+position = Vector2( 448, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 416, 32, 32 )
+
+[node name="0014_0014" type="Sprite" parent="." index="406"]
+
+show_behind_parent = true
+position = Vector2( 448, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 448, 32, 32 )
+
+[node name="0014_0015" type="Sprite" parent="." index="407"]
+
+show_behind_parent = true
+position = Vector2( 448, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 480, 32, 32 )
+
+[node name="0014_0016" type="Sprite" parent="." index="408"]
+
+show_behind_parent = true
+position = Vector2( 448, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 512, 32, 32 )
+
+[node name="0014_0017" type="Sprite" parent="." index="409"]
+
+show_behind_parent = true
+position = Vector2( 448, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 544, 32, 32 )
+
+[node name="0014_0018" type="Sprite" parent="." index="410"]
+
+show_behind_parent = true
+position = Vector2( 448, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 576, 32, 32 )
+
+[node name="0014_0019" type="Sprite" parent="." index="411"]
+
+show_behind_parent = true
+position = Vector2( 448, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 608, 32, 32 )
+
+[node name="0014_0020" type="Sprite" parent="." index="412"]
+
+show_behind_parent = true
+position = Vector2( 448, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 640, 32, 32 )
+
+[node name="0014_0021" type="Sprite" parent="." index="413"]
+
+show_behind_parent = true
+position = Vector2( 448, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 672, 32, 32 )
+
+[node name="0014_0022" type="Sprite" parent="." index="414"]
+
+show_behind_parent = true
+position = Vector2( 448, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 704, 32, 32 )
+
+[node name="0014_0023" type="Sprite" parent="." index="415"]
+
+show_behind_parent = true
+position = Vector2( 448, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 736, 32, 32 )
+
+[node name="0014_0024" type="Sprite" parent="." index="416"]
+
+show_behind_parent = true
+position = Vector2( 448, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 768, 32, 32 )
+
+[node name="0014_0025" type="Sprite" parent="." index="417"]
+
+show_behind_parent = true
+position = Vector2( 448, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 800, 32, 32 )
+
+[node name="0014_0026" type="Sprite" parent="." index="418"]
+
+show_behind_parent = true
+position = Vector2( 448, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 832, 32, 32 )
+
+[node name="0014_0027" type="Sprite" parent="." index="419"]
+
+show_behind_parent = true
+position = Vector2( 448, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 448, 864, 32, 32 )
+
+[node name="0015_0000" type="Sprite" parent="." index="420"]
+
+show_behind_parent = true
+position = Vector2( 480, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 0, 32, 32 )
+
+[node name="0015_0001" type="Sprite" parent="." index="421"]
+
+show_behind_parent = true
+position = Vector2( 480, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 32, 32, 32 )
+
+[node name="0015_0002" type="Sprite" parent="." index="422"]
+
+show_behind_parent = true
+position = Vector2( 480, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 64, 32, 32 )
+
+[node name="0015_0003" type="Sprite" parent="." index="423"]
+
+show_behind_parent = true
+position = Vector2( 480, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 96, 32, 32 )
+
+[node name="0015_0004" type="Sprite" parent="." index="424"]
+
+show_behind_parent = true
+position = Vector2( 480, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 128, 32, 32 )
+
+[node name="0015_0005" type="Sprite" parent="." index="425"]
+
+show_behind_parent = true
+position = Vector2( 480, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 160, 32, 32 )
+
+[node name="0015_0006" type="Sprite" parent="." index="426"]
+
+show_behind_parent = true
+position = Vector2( 480, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 192, 32, 32 )
+
+[node name="0015_0007" type="Sprite" parent="." index="427"]
+
+show_behind_parent = true
+position = Vector2( 480, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 224, 32, 32 )
+
+[node name="0015_0008" type="Sprite" parent="." index="428"]
+
+show_behind_parent = true
+position = Vector2( 480, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 256, 32, 32 )
+
+[node name="0015_0009" type="Sprite" parent="." index="429"]
+
+show_behind_parent = true
+position = Vector2( 480, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 288, 32, 32 )
+
+[node name="0015_0010" type="Sprite" parent="." index="430"]
+
+show_behind_parent = true
+position = Vector2( 480, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 320, 32, 32 )
+
+[node name="0015_0011" type="Sprite" parent="." index="431"]
+
+show_behind_parent = true
+position = Vector2( 480, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 352, 32, 32 )
+
+[node name="0015_0012" type="Sprite" parent="." index="432"]
+
+show_behind_parent = true
+position = Vector2( 480, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 384, 32, 32 )
+
+[node name="0015_0013" type="Sprite" parent="." index="433"]
+
+show_behind_parent = true
+position = Vector2( 480, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 416, 32, 32 )
+
+[node name="0015_0014" type="Sprite" parent="." index="434"]
+
+show_behind_parent = true
+position = Vector2( 480, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 448, 32, 32 )
+
+[node name="0015_0015" type="Sprite" parent="." index="435"]
+
+show_behind_parent = true
+position = Vector2( 480, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 480, 32, 32 )
+
+[node name="0015_0016" type="Sprite" parent="." index="436"]
+
+show_behind_parent = true
+position = Vector2( 480, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 512, 32, 32 )
+
+[node name="0015_0017" type="Sprite" parent="." index="437"]
+
+show_behind_parent = true
+position = Vector2( 480, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 544, 32, 32 )
+
+[node name="0015_0018" type="Sprite" parent="." index="438"]
+
+show_behind_parent = true
+position = Vector2( 480, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 576, 32, 32 )
+
+[node name="0015_0019" type="Sprite" parent="." index="439"]
+
+show_behind_parent = true
+position = Vector2( 480, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 608, 32, 32 )
+
+[node name="0015_0020" type="Sprite" parent="." index="440"]
+
+show_behind_parent = true
+position = Vector2( 480, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 640, 32, 32 )
+
+[node name="0015_0021" type="Sprite" parent="." index="441"]
+
+show_behind_parent = true
+position = Vector2( 480, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 672, 32, 32 )
+
+[node name="0015_0022" type="Sprite" parent="." index="442"]
+
+show_behind_parent = true
+position = Vector2( 480, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 704, 32, 32 )
+
+[node name="0015_0023" type="Sprite" parent="." index="443"]
+
+show_behind_parent = true
+position = Vector2( 480, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 736, 32, 32 )
+
+[node name="0015_0024" type="Sprite" parent="." index="444"]
+
+show_behind_parent = true
+position = Vector2( 480, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 768, 32, 32 )
+
+[node name="0015_0025" type="Sprite" parent="." index="445"]
+
+show_behind_parent = true
+position = Vector2( 480, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 800, 32, 32 )
+
+[node name="0015_0026" type="Sprite" parent="." index="446"]
+
+show_behind_parent = true
+position = Vector2( 480, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 832, 32, 32 )
+
+[node name="0015_0027" type="Sprite" parent="." index="447"]
+
+show_behind_parent = true
+position = Vector2( 480, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 480, 864, 32, 32 )
+
+[node name="0016_0000" type="Sprite" parent="." index="448"]
+
+show_behind_parent = true
+position = Vector2( 512, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 0, 32, 32 )
+
+[node name="0016_0001" type="Sprite" parent="." index="449"]
+
+show_behind_parent = true
+position = Vector2( 512, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 32, 32, 32 )
+
+[node name="0016_0002" type="Sprite" parent="." index="450"]
+
+show_behind_parent = true
+position = Vector2( 512, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 64, 32, 32 )
+
+[node name="0016_0003" type="Sprite" parent="." index="451"]
+
+show_behind_parent = true
+position = Vector2( 512, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 96, 32, 32 )
+
+[node name="0016_0004" type="Sprite" parent="." index="452"]
+
+show_behind_parent = true
+position = Vector2( 512, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 128, 32, 32 )
+
+[node name="0016_0005" type="Sprite" parent="." index="453"]
+
+show_behind_parent = true
+position = Vector2( 512, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 160, 32, 32 )
+
+[node name="0016_0006" type="Sprite" parent="." index="454"]
+
+show_behind_parent = true
+position = Vector2( 512, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 192, 32, 32 )
+
+[node name="0016_0007" type="Sprite" parent="." index="455"]
+
+show_behind_parent = true
+position = Vector2( 512, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 224, 32, 32 )
+
+[node name="0016_0008" type="Sprite" parent="." index="456"]
+
+show_behind_parent = true
+position = Vector2( 512, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 256, 32, 32 )
+
+[node name="0016_0009" type="Sprite" parent="." index="457"]
+
+show_behind_parent = true
+position = Vector2( 512, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 288, 32, 32 )
+
+[node name="0016_0010" type="Sprite" parent="." index="458"]
+
+show_behind_parent = true
+position = Vector2( 512, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 320, 32, 32 )
+
+[node name="0016_0011" type="Sprite" parent="." index="459"]
+
+show_behind_parent = true
+position = Vector2( 512, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 352, 32, 32 )
+
+[node name="0016_0012" type="Sprite" parent="." index="460"]
+
+show_behind_parent = true
+position = Vector2( 512, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 384, 32, 32 )
+
+[node name="0016_0013" type="Sprite" parent="." index="461"]
+
+show_behind_parent = true
+position = Vector2( 512, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 416, 32, 32 )
+
+[node name="0016_0014" type="Sprite" parent="." index="462"]
+
+show_behind_parent = true
+position = Vector2( 512, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 448, 32, 32 )
+
+[node name="0016_0015" type="Sprite" parent="." index="463"]
+
+show_behind_parent = true
+position = Vector2( 512, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 480, 32, 32 )
+
+[node name="0016_0016" type="Sprite" parent="." index="464"]
+
+show_behind_parent = true
+position = Vector2( 512, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 512, 32, 32 )
+
+[node name="0016_0017" type="Sprite" parent="." index="465"]
+
+show_behind_parent = true
+position = Vector2( 512, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 544, 32, 32 )
+
+[node name="0016_0018" type="Sprite" parent="." index="466"]
+
+show_behind_parent = true
+position = Vector2( 512, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 576, 32, 32 )
+
+[node name="0016_0019" type="Sprite" parent="." index="467"]
+
+show_behind_parent = true
+position = Vector2( 512, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 608, 32, 32 )
+
+[node name="0016_0020" type="Sprite" parent="." index="468"]
+
+show_behind_parent = true
+position = Vector2( 512, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 640, 32, 32 )
+
+[node name="0016_0021" type="Sprite" parent="." index="469"]
+
+show_behind_parent = true
+position = Vector2( 512, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 672, 32, 32 )
+
+[node name="0016_0022" type="Sprite" parent="." index="470"]
+
+show_behind_parent = true
+position = Vector2( 512, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 704, 32, 32 )
+
+[node name="0016_0023" type="Sprite" parent="." index="471"]
+
+show_behind_parent = true
+position = Vector2( 512, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 736, 32, 32 )
+
+[node name="0016_0024" type="Sprite" parent="." index="472"]
+
+show_behind_parent = true
+position = Vector2( 512, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 768, 32, 32 )
+
+[node name="0016_0025" type="Sprite" parent="." index="473"]
+
+show_behind_parent = true
+position = Vector2( 512, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 800, 32, 32 )
+
+[node name="0016_0026" type="Sprite" parent="." index="474"]
+
+show_behind_parent = true
+position = Vector2( 512, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 832, 32, 32 )
+
+[node name="0016_0027" type="Sprite" parent="." index="475"]
+
+show_behind_parent = true
+position = Vector2( 512, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 512, 864, 32, 32 )
+
+[node name="0017_0000" type="Sprite" parent="." index="476"]
+
+show_behind_parent = true
+position = Vector2( 544, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 0, 32, 32 )
+
+[node name="0017_0001" type="Sprite" parent="." index="477"]
+
+show_behind_parent = true
+position = Vector2( 544, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 32, 32, 32 )
+
+[node name="0017_0002" type="Sprite" parent="." index="478"]
+
+show_behind_parent = true
+position = Vector2( 544, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 64, 32, 32 )
+
+[node name="0017_0003" type="Sprite" parent="." index="479"]
+
+show_behind_parent = true
+position = Vector2( 544, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 96, 32, 32 )
+
+[node name="0017_0004" type="Sprite" parent="." index="480"]
+
+show_behind_parent = true
+position = Vector2( 544, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 128, 32, 32 )
+
+[node name="0017_0005" type="Sprite" parent="." index="481"]
+
+show_behind_parent = true
+position = Vector2( 544, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 160, 32, 32 )
+
+[node name="0017_0006" type="Sprite" parent="." index="482"]
+
+show_behind_parent = true
+position = Vector2( 544, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 192, 32, 32 )
+
+[node name="0017_0007" type="Sprite" parent="." index="483"]
+
+show_behind_parent = true
+position = Vector2( 544, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 224, 32, 32 )
+
+[node name="0017_0008" type="Sprite" parent="." index="484"]
+
+show_behind_parent = true
+position = Vector2( 544, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 256, 32, 32 )
+
+[node name="0017_0009" type="Sprite" parent="." index="485"]
+
+show_behind_parent = true
+position = Vector2( 544, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 288, 32, 32 )
+
+[node name="0017_0010" type="Sprite" parent="." index="486"]
+
+show_behind_parent = true
+position = Vector2( 544, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 320, 32, 32 )
+
+[node name="0017_0011" type="Sprite" parent="." index="487"]
+
+show_behind_parent = true
+position = Vector2( 544, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 352, 32, 32 )
+
+[node name="0017_0012" type="Sprite" parent="." index="488"]
+
+show_behind_parent = true
+position = Vector2( 544, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 384, 32, 32 )
+
+[node name="0017_0013" type="Sprite" parent="." index="489"]
+
+show_behind_parent = true
+position = Vector2( 544, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 416, 32, 32 )
+
+[node name="0017_0014" type="Sprite" parent="." index="490"]
+
+show_behind_parent = true
+position = Vector2( 544, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 448, 32, 32 )
+
+[node name="0017_0015" type="Sprite" parent="." index="491"]
+
+show_behind_parent = true
+position = Vector2( 544, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 480, 32, 32 )
+
+[node name="0017_0016" type="Sprite" parent="." index="492"]
+
+show_behind_parent = true
+position = Vector2( 544, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 512, 32, 32 )
+
+[node name="0017_0017" type="Sprite" parent="." index="493"]
+
+show_behind_parent = true
+position = Vector2( 544, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 544, 32, 32 )
+
+[node name="0017_0018" type="Sprite" parent="." index="494"]
+
+show_behind_parent = true
+position = Vector2( 544, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 576, 32, 32 )
+
+[node name="0017_0019" type="Sprite" parent="." index="495"]
+
+show_behind_parent = true
+position = Vector2( 544, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 608, 32, 32 )
+
+[node name="0017_0020" type="Sprite" parent="." index="496"]
+
+show_behind_parent = true
+position = Vector2( 544, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 640, 32, 32 )
+
+[node name="0017_0021" type="Sprite" parent="." index="497"]
+
+show_behind_parent = true
+position = Vector2( 544, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 672, 32, 32 )
+
+[node name="0017_0022" type="Sprite" parent="." index="498"]
+
+show_behind_parent = true
+position = Vector2( 544, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 704, 32, 32 )
+
+[node name="0017_0023" type="Sprite" parent="." index="499"]
+
+show_behind_parent = true
+position = Vector2( 544, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 736, 32, 32 )
+
+[node name="0017_0024" type="Sprite" parent="." index="500"]
+
+show_behind_parent = true
+position = Vector2( 544, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 768, 32, 32 )
+
+[node name="0017_0025" type="Sprite" parent="." index="501"]
+
+show_behind_parent = true
+position = Vector2( 544, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 800, 32, 32 )
+
+[node name="0017_0026" type="Sprite" parent="." index="502"]
+
+show_behind_parent = true
+position = Vector2( 544, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 832, 32, 32 )
+
+[node name="0017_0027" type="Sprite" parent="." index="503"]
+
+show_behind_parent = true
+position = Vector2( 544, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 544, 864, 32, 32 )
+
+[node name="0018_0000" type="Sprite" parent="." index="504"]
+
+show_behind_parent = true
+position = Vector2( 576, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 0, 32, 32 )
+
+[node name="0018_0001" type="Sprite" parent="." index="505"]
+
+show_behind_parent = true
+position = Vector2( 576, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 32, 32, 32 )
+
+[node name="0018_0002" type="Sprite" parent="." index="506"]
+
+show_behind_parent = true
+position = Vector2( 576, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 64, 32, 32 )
+
+[node name="0018_0003" type="Sprite" parent="." index="507"]
+
+show_behind_parent = true
+position = Vector2( 576, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 96, 32, 32 )
+
+[node name="0018_0004" type="Sprite" parent="." index="508"]
+
+show_behind_parent = true
+position = Vector2( 576, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 128, 32, 32 )
+
+[node name="0018_0005" type="Sprite" parent="." index="509"]
+
+show_behind_parent = true
+position = Vector2( 576, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 160, 32, 32 )
+
+[node name="0018_0006" type="Sprite" parent="." index="510"]
+
+show_behind_parent = true
+position = Vector2( 576, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 192, 32, 32 )
+
+[node name="0018_0007" type="Sprite" parent="." index="511"]
+
+show_behind_parent = true
+position = Vector2( 576, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 224, 32, 32 )
+
+[node name="0018_0008" type="Sprite" parent="." index="512"]
+
+show_behind_parent = true
+position = Vector2( 576, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 256, 32, 32 )
+
+[node name="0018_0009" type="Sprite" parent="." index="513"]
+
+show_behind_parent = true
+position = Vector2( 576, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 288, 32, 32 )
+
+[node name="0018_0010" type="Sprite" parent="." index="514"]
+
+show_behind_parent = true
+position = Vector2( 576, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 320, 32, 32 )
+
+[node name="0018_0011" type="Sprite" parent="." index="515"]
+
+show_behind_parent = true
+position = Vector2( 576, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 352, 32, 32 )
+
+[node name="0018_0012" type="Sprite" parent="." index="516"]
+
+show_behind_parent = true
+position = Vector2( 576, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 384, 32, 32 )
+
+[node name="0018_0013" type="Sprite" parent="." index="517"]
+
+show_behind_parent = true
+position = Vector2( 576, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 416, 32, 32 )
+
+[node name="0018_0014" type="Sprite" parent="." index="518"]
+
+show_behind_parent = true
+position = Vector2( 576, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 448, 32, 32 )
+
+[node name="0018_0015" type="Sprite" parent="." index="519"]
+
+show_behind_parent = true
+position = Vector2( 576, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 480, 32, 32 )
+
+[node name="0018_0016" type="Sprite" parent="." index="520"]
+
+show_behind_parent = true
+position = Vector2( 576, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 512, 32, 32 )
+
+[node name="0018_0017" type="Sprite" parent="." index="521"]
+
+show_behind_parent = true
+position = Vector2( 576, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 544, 32, 32 )
+
+[node name="0018_0018" type="Sprite" parent="." index="522"]
+
+show_behind_parent = true
+position = Vector2( 576, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 576, 32, 32 )
+
+[node name="0018_0019" type="Sprite" parent="." index="523"]
+
+show_behind_parent = true
+position = Vector2( 576, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 608, 32, 32 )
+
+[node name="0018_0020" type="Sprite" parent="." index="524"]
+
+show_behind_parent = true
+position = Vector2( 576, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 640, 32, 32 )
+
+[node name="0018_0021" type="Sprite" parent="." index="525"]
+
+show_behind_parent = true
+position = Vector2( 576, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 672, 32, 32 )
+
+[node name="0018_0022" type="Sprite" parent="." index="526"]
+
+show_behind_parent = true
+position = Vector2( 576, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 704, 32, 32 )
+
+[node name="0018_0023" type="Sprite" parent="." index="527"]
+
+show_behind_parent = true
+position = Vector2( 576, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 736, 32, 32 )
+
+[node name="0018_0024" type="Sprite" parent="." index="528"]
+
+show_behind_parent = true
+position = Vector2( 576, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 768, 32, 32 )
+
+[node name="0018_0025" type="Sprite" parent="." index="529"]
+
+show_behind_parent = true
+position = Vector2( 576, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 800, 32, 32 )
+
+[node name="0018_0026" type="Sprite" parent="." index="530"]
+
+show_behind_parent = true
+position = Vector2( 576, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 832, 32, 32 )
+
+[node name="0018_0027" type="Sprite" parent="." index="531"]
+
+show_behind_parent = true
+position = Vector2( 576, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 576, 864, 32, 32 )
+
+[node name="0019_0000" type="Sprite" parent="." index="532"]
+
+show_behind_parent = true
+position = Vector2( 608, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 0, 32, 32 )
+
+[node name="0019_0001" type="Sprite" parent="." index="533"]
+
+show_behind_parent = true
+position = Vector2( 608, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 32, 32, 32 )
+
+[node name="0019_0002" type="Sprite" parent="." index="534"]
+
+show_behind_parent = true
+position = Vector2( 608, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 64, 32, 32 )
+
+[node name="0019_0003" type="Sprite" parent="." index="535"]
+
+show_behind_parent = true
+position = Vector2( 608, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 96, 32, 32 )
+
+[node name="0019_0004" type="Sprite" parent="." index="536"]
+
+show_behind_parent = true
+position = Vector2( 608, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 128, 32, 32 )
+
+[node name="0019_0005" type="Sprite" parent="." index="537"]
+
+show_behind_parent = true
+position = Vector2( 608, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 160, 32, 32 )
+
+[node name="0019_0006" type="Sprite" parent="." index="538"]
+
+show_behind_parent = true
+position = Vector2( 608, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 192, 32, 32 )
+
+[node name="0019_0007" type="Sprite" parent="." index="539"]
+
+show_behind_parent = true
+position = Vector2( 608, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 224, 32, 32 )
+
+[node name="0019_0008" type="Sprite" parent="." index="540"]
+
+show_behind_parent = true
+position = Vector2( 608, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 256, 32, 32 )
+
+[node name="0019_0009" type="Sprite" parent="." index="541"]
+
+show_behind_parent = true
+position = Vector2( 608, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 288, 32, 32 )
+
+[node name="0019_0010" type="Sprite" parent="." index="542"]
+
+show_behind_parent = true
+position = Vector2( 608, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 320, 32, 32 )
+
+[node name="0019_0011" type="Sprite" parent="." index="543"]
+
+show_behind_parent = true
+position = Vector2( 608, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 352, 32, 32 )
+
+[node name="0019_0012" type="Sprite" parent="." index="544"]
+
+show_behind_parent = true
+position = Vector2( 608, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 384, 32, 32 )
+
+[node name="0019_0013" type="Sprite" parent="." index="545"]
+
+show_behind_parent = true
+position = Vector2( 608, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 416, 32, 32 )
+
+[node name="0019_0014" type="Sprite" parent="." index="546"]
+
+show_behind_parent = true
+position = Vector2( 608, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 448, 32, 32 )
+
+[node name="0019_0015" type="Sprite" parent="." index="547"]
+
+show_behind_parent = true
+position = Vector2( 608, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 480, 32, 32 )
+
+[node name="0019_0016" type="Sprite" parent="." index="548"]
+
+show_behind_parent = true
+position = Vector2( 608, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 512, 32, 32 )
+
+[node name="0019_0017" type="Sprite" parent="." index="549"]
+
+show_behind_parent = true
+position = Vector2( 608, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 544, 32, 32 )
+
+[node name="0019_0018" type="Sprite" parent="." index="550"]
+
+show_behind_parent = true
+position = Vector2( 608, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 576, 32, 32 )
+
+[node name="0019_0019" type="Sprite" parent="." index="551"]
+
+show_behind_parent = true
+position = Vector2( 608, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 608, 32, 32 )
+
+[node name="0019_0020" type="Sprite" parent="." index="552"]
+
+show_behind_parent = true
+position = Vector2( 608, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 640, 32, 32 )
+
+[node name="0019_0021" type="Sprite" parent="." index="553"]
+
+show_behind_parent = true
+position = Vector2( 608, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 672, 32, 32 )
+
+[node name="0019_0022" type="Sprite" parent="." index="554"]
+
+show_behind_parent = true
+position = Vector2( 608, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 704, 32, 32 )
+
+[node name="0019_0023" type="Sprite" parent="." index="555"]
+
+show_behind_parent = true
+position = Vector2( 608, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 736, 32, 32 )
+
+[node name="0019_0024" type="Sprite" parent="." index="556"]
+
+show_behind_parent = true
+position = Vector2( 608, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 768, 32, 32 )
+
+[node name="0019_0025" type="Sprite" parent="." index="557"]
+
+show_behind_parent = true
+position = Vector2( 608, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 800, 32, 32 )
+
+[node name="0019_0026" type="Sprite" parent="." index="558"]
+
+show_behind_parent = true
+position = Vector2( 608, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 832, 32, 32 )
+
+[node name="0019_0027" type="Sprite" parent="." index="559"]
+
+show_behind_parent = true
+position = Vector2( 608, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 608, 864, 32, 32 )
+
+[node name="0020_0000" type="Sprite" parent="." index="560"]
+
+show_behind_parent = true
+position = Vector2( 640, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 0, 32, 32 )
+
+[node name="0020_0001" type="Sprite" parent="." index="561"]
+
+show_behind_parent = true
+position = Vector2( 640, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 32, 32, 32 )
+
+[node name="0020_0002" type="Sprite" parent="." index="562"]
+
+show_behind_parent = true
+position = Vector2( 640, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 64, 32, 32 )
+
+[node name="0020_0003" type="Sprite" parent="." index="563"]
+
+show_behind_parent = true
+position = Vector2( 640, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 96, 32, 32 )
+
+[node name="0020_0004" type="Sprite" parent="." index="564"]
+
+show_behind_parent = true
+position = Vector2( 640, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 128, 32, 32 )
+
+[node name="0020_0005" type="Sprite" parent="." index="565"]
+
+show_behind_parent = true
+position = Vector2( 640, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 160, 32, 32 )
+
+[node name="0020_0006" type="Sprite" parent="." index="566"]
+
+show_behind_parent = true
+position = Vector2( 640, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 192, 32, 32 )
+
+[node name="0020_0007" type="Sprite" parent="." index="567"]
+
+show_behind_parent = true
+position = Vector2( 640, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 224, 32, 32 )
+
+[node name="0020_0008" type="Sprite" parent="." index="568"]
+
+show_behind_parent = true
+position = Vector2( 640, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 256, 32, 32 )
+
+[node name="0020_0009" type="Sprite" parent="." index="569"]
+
+show_behind_parent = true
+position = Vector2( 640, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 288, 32, 32 )
+
+[node name="0020_0010" type="Sprite" parent="." index="570"]
+
+show_behind_parent = true
+position = Vector2( 640, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 320, 32, 32 )
+
+[node name="0020_0011" type="Sprite" parent="." index="571"]
+
+show_behind_parent = true
+position = Vector2( 640, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 352, 32, 32 )
+
+[node name="0020_0012" type="Sprite" parent="." index="572"]
+
+show_behind_parent = true
+position = Vector2( 640, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 384, 32, 32 )
+
+[node name="0020_0013" type="Sprite" parent="." index="573"]
+
+show_behind_parent = true
+position = Vector2( 640, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 416, 32, 32 )
+
+[node name="0020_0014" type="Sprite" parent="." index="574"]
+
+show_behind_parent = true
+position = Vector2( 640, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 448, 32, 32 )
+
+[node name="0020_0015" type="Sprite" parent="." index="575"]
+
+show_behind_parent = true
+position = Vector2( 640, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 480, 32, 32 )
+
+[node name="0020_0016" type="Sprite" parent="." index="576"]
+
+show_behind_parent = true
+position = Vector2( 640, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 512, 32, 32 )
+
+[node name="0020_0017" type="Sprite" parent="." index="577"]
+
+show_behind_parent = true
+position = Vector2( 640, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 544, 32, 32 )
+
+[node name="0020_0018" type="Sprite" parent="." index="578"]
+
+show_behind_parent = true
+position = Vector2( 640, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 576, 32, 32 )
+
+[node name="0020_0019" type="Sprite" parent="." index="579"]
+
+show_behind_parent = true
+position = Vector2( 640, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 608, 32, 32 )
+
+[node name="0020_0020" type="Sprite" parent="." index="580"]
+
+show_behind_parent = true
+position = Vector2( 640, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 640, 32, 32 )
+
+[node name="0020_0021" type="Sprite" parent="." index="581"]
+
+show_behind_parent = true
+position = Vector2( 640, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 672, 32, 32 )
+
+[node name="0020_0022" type="Sprite" parent="." index="582"]
+
+show_behind_parent = true
+position = Vector2( 640, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 704, 32, 32 )
+
+[node name="0020_0023" type="Sprite" parent="." index="583"]
+
+show_behind_parent = true
+position = Vector2( 640, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 736, 32, 32 )
+
+[node name="0020_0024" type="Sprite" parent="." index="584"]
+
+show_behind_parent = true
+position = Vector2( 640, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 768, 32, 32 )
+
+[node name="0020_0025" type="Sprite" parent="." index="585"]
+
+show_behind_parent = true
+position = Vector2( 640, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 800, 32, 32 )
+
+[node name="0020_0026" type="Sprite" parent="." index="586"]
+
+show_behind_parent = true
+position = Vector2( 640, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 832, 32, 32 )
+
+[node name="0020_0027" type="Sprite" parent="." index="587"]
+
+show_behind_parent = true
+position = Vector2( 640, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 640, 864, 32, 32 )
+
+[node name="0021_0000" type="Sprite" parent="." index="588"]
+
+show_behind_parent = true
+position = Vector2( 672, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 0, 32, 32 )
+
+[node name="0021_0001" type="Sprite" parent="." index="589"]
+
+show_behind_parent = true
+position = Vector2( 672, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 32, 32, 32 )
+
+[node name="0021_0002" type="Sprite" parent="." index="590"]
+
+show_behind_parent = true
+position = Vector2( 672, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 64, 32, 32 )
+
+[node name="0021_0003" type="Sprite" parent="." index="591"]
+
+show_behind_parent = true
+position = Vector2( 672, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 96, 32, 32 )
+
+[node name="0021_0004" type="Sprite" parent="." index="592"]
+
+show_behind_parent = true
+position = Vector2( 672, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 128, 32, 32 )
+
+[node name="0021_0005" type="Sprite" parent="." index="593"]
+
+show_behind_parent = true
+position = Vector2( 672, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 160, 32, 32 )
+
+[node name="0021_0006" type="Sprite" parent="." index="594"]
+
+show_behind_parent = true
+position = Vector2( 672, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 192, 32, 32 )
+
+[node name="0021_0007" type="Sprite" parent="." index="595"]
+
+show_behind_parent = true
+position = Vector2( 672, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 224, 32, 32 )
+
+[node name="0021_0008" type="Sprite" parent="." index="596"]
+
+show_behind_parent = true
+position = Vector2( 672, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 256, 32, 32 )
+
+[node name="0021_0009" type="Sprite" parent="." index="597"]
+
+show_behind_parent = true
+position = Vector2( 672, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 288, 32, 32 )
+
+[node name="0021_0010" type="Sprite" parent="." index="598"]
+
+show_behind_parent = true
+position = Vector2( 672, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 320, 32, 32 )
+
+[node name="0021_0011" type="Sprite" parent="." index="599"]
+
+show_behind_parent = true
+position = Vector2( 672, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 352, 32, 32 )
+
+[node name="0021_0012" type="Sprite" parent="." index="600"]
+
+show_behind_parent = true
+position = Vector2( 672, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 384, 32, 32 )
+
+[node name="0021_0013" type="Sprite" parent="." index="601"]
+
+show_behind_parent = true
+position = Vector2( 672, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 416, 32, 32 )
+
+[node name="0021_0014" type="Sprite" parent="." index="602"]
+
+show_behind_parent = true
+position = Vector2( 672, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 448, 32, 32 )
+
+[node name="0021_0015" type="Sprite" parent="." index="603"]
+
+show_behind_parent = true
+position = Vector2( 672, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 480, 32, 32 )
+
+[node name="0021_0016" type="Sprite" parent="." index="604"]
+
+show_behind_parent = true
+position = Vector2( 672, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 512, 32, 32 )
+
+[node name="0021_0017" type="Sprite" parent="." index="605"]
+
+show_behind_parent = true
+position = Vector2( 672, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 544, 32, 32 )
+
+[node name="0021_0018" type="Sprite" parent="." index="606"]
+
+show_behind_parent = true
+position = Vector2( 672, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 576, 32, 32 )
+
+[node name="0021_0019" type="Sprite" parent="." index="607"]
+
+show_behind_parent = true
+position = Vector2( 672, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 608, 32, 32 )
+
+[node name="0021_0020" type="Sprite" parent="." index="608"]
+
+show_behind_parent = true
+position = Vector2( 672, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 640, 32, 32 )
+
+[node name="0021_0021" type="Sprite" parent="." index="609"]
+
+show_behind_parent = true
+position = Vector2( 672, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 672, 32, 32 )
+
+[node name="0021_0022" type="Sprite" parent="." index="610"]
+
+show_behind_parent = true
+position = Vector2( 672, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 704, 32, 32 )
+
+[node name="0021_0023" type="Sprite" parent="." index="611"]
+
+show_behind_parent = true
+position = Vector2( 672, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 736, 32, 32 )
+
+[node name="0021_0024" type="Sprite" parent="." index="612"]
+
+show_behind_parent = true
+position = Vector2( 672, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 768, 32, 32 )
+
+[node name="0021_0025" type="Sprite" parent="." index="613"]
+
+show_behind_parent = true
+position = Vector2( 672, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 800, 32, 32 )
+
+[node name="0021_0026" type="Sprite" parent="." index="614"]
+
+show_behind_parent = true
+position = Vector2( 672, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 832, 32, 32 )
+
+[node name="0021_0027" type="Sprite" parent="." index="615"]
+
+show_behind_parent = true
+position = Vector2( 672, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 672, 864, 32, 32 )
+
+[node name="0022_0000" type="Sprite" parent="." index="616"]
+
+show_behind_parent = true
+position = Vector2( 704, 0 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 0, 32, 32 )
+
+[node name="0022_0001" type="Sprite" parent="." index="617"]
+
+show_behind_parent = true
+position = Vector2( 704, 32 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 32, 32, 32 )
+
+[node name="0022_0002" type="Sprite" parent="." index="618"]
+
+show_behind_parent = true
+position = Vector2( 704, 64 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 64, 32, 32 )
+
+[node name="0022_0003" type="Sprite" parent="." index="619"]
+
+show_behind_parent = true
+position = Vector2( 704, 96 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 96, 32, 32 )
+
+[node name="0022_0004" type="Sprite" parent="." index="620"]
+
+show_behind_parent = true
+position = Vector2( 704, 128 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 128, 32, 32 )
+
+[node name="0022_0005" type="Sprite" parent="." index="621"]
+
+show_behind_parent = true
+position = Vector2( 704, 160 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 160, 32, 32 )
+
+[node name="0022_0006" type="Sprite" parent="." index="622"]
+
+show_behind_parent = true
+position = Vector2( 704, 192 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 192, 32, 32 )
+
+[node name="0022_0007" type="Sprite" parent="." index="623"]
+
+show_behind_parent = true
+position = Vector2( 704, 224 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 224, 32, 32 )
+
+[node name="0022_0008" type="Sprite" parent="." index="624"]
+
+show_behind_parent = true
+position = Vector2( 704, 256 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 256, 32, 32 )
+
+[node name="0022_0009" type="Sprite" parent="." index="625"]
+
+show_behind_parent = true
+position = Vector2( 704, 288 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 288, 32, 32 )
+
+[node name="0022_0010" type="Sprite" parent="." index="626"]
+
+show_behind_parent = true
+position = Vector2( 704, 320 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 320, 32, 32 )
+
+[node name="0022_0011" type="Sprite" parent="." index="627"]
+
+show_behind_parent = true
+position = Vector2( 704, 352 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 352, 32, 32 )
+
+[node name="0022_0012" type="Sprite" parent="." index="628"]
+
+show_behind_parent = true
+position = Vector2( 704, 384 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 384, 32, 32 )
+
+[node name="0022_0013" type="Sprite" parent="." index="629"]
+
+show_behind_parent = true
+position = Vector2( 704, 416 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 416, 32, 32 )
+
+[node name="0022_0014" type="Sprite" parent="." index="630"]
+
+show_behind_parent = true
+position = Vector2( 704, 448 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 448, 32, 32 )
+
+[node name="0022_0015" type="Sprite" parent="." index="631"]
+
+show_behind_parent = true
+position = Vector2( 704, 480 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 480, 32, 32 )
+
+[node name="0022_0016" type="Sprite" parent="." index="632"]
+
+show_behind_parent = true
+position = Vector2( 704, 512 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 512, 32, 32 )
+
+[node name="0022_0017" type="Sprite" parent="." index="633"]
+
+show_behind_parent = true
+position = Vector2( 704, 544 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 544, 32, 32 )
+
+[node name="0022_0018" type="Sprite" parent="." index="634"]
+
+show_behind_parent = true
+position = Vector2( 704, 576 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 576, 32, 32 )
+
+[node name="0022_0019" type="Sprite" parent="." index="635"]
+
+show_behind_parent = true
+position = Vector2( 704, 608 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 608, 32, 32 )
+
+[node name="0022_0020" type="Sprite" parent="." index="636"]
+
+show_behind_parent = true
+position = Vector2( 704, 640 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 640, 32, 32 )
+
+[node name="0022_0021" type="Sprite" parent="." index="637"]
+
+show_behind_parent = true
+position = Vector2( 704, 672 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 672, 32, 32 )
+
+[node name="0022_0022" type="Sprite" parent="." index="638"]
+
+show_behind_parent = true
+position = Vector2( 704, 704 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 704, 32, 32 )
+
+[node name="0022_0023" type="Sprite" parent="." index="639"]
+
+show_behind_parent = true
+position = Vector2( 704, 736 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 736, 32, 32 )
+
+[node name="0022_0024" type="Sprite" parent="." index="640"]
+
+show_behind_parent = true
+position = Vector2( 704, 768 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 768, 32, 32 )
+
+[node name="0022_0025" type="Sprite" parent="." index="641"]
+
+show_behind_parent = true
+position = Vector2( 704, 800 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 800, 32, 32 )
+
+[node name="0022_0026" type="Sprite" parent="." index="642"]
+
+show_behind_parent = true
+position = Vector2( 704, 832 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 832, 32, 32 )
+
+[node name="0022_0027" type="Sprite" parent="." index="643"]
+
+show_behind_parent = true
+position = Vector2( 704, 864 )
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 704, 864, 32, 32 )
 
 
